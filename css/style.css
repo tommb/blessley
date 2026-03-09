@@ -1,0 +1,570 @@
+/* Thomas Blessley • Photography — portfolio styles */
+:root {
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --bg: #fafafa;
+  --border: #e0e0e0;
+  --accent: #333;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  width: 100%;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Site header — title left, about right */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  width: 100%;
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.site-title a {
+  color: var(--text);
+}
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+/* Header nav: about + locations (right-aligned) */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-nav a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.header-nav a:hover {
+  color: var(--text);
+}
+
+/* Breadcrumb as site title (album pages) */
+.breadcrumb-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.breadcrumb-title a {
+  color: var(--text);
+}
+
+.breadcrumb-title span {
+  margin: 0 0.25em;
+}
+
+/* Slash separator: grey on all pages */
+.breadcrumb-title span.sep {
+  color: var(--text-muted);
+}
+
+.breadcrumb-title span:not(.sep):last-child {
+  color: var(--text);
+  margin-left: 0;
+}
+
+/* Index: full-width thumbnail grid */
+.index-main {
+  width: 100%;
+  padding: 0 1.5rem 4rem;
+}
+
+.album-thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.album-thumb {
+  display: block;
+  color: var(--text);
+}
+
+.album-thumb:hover {
+  text-decoration: none;
+}
+
+.album-thumb:hover .album-thumb-label {
+  text-decoration: underline;
+}
+
+.album-thumb-img-wrap {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--border);
+}
+
+.album-thumb-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.album-thumb-label {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 480px) {
+  .album-thumb-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 640px) {
+  .album-thumb-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .album-thumb-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .album-thumb-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
+
+/* Inner pages: constrained width (about page only) */
+body.has-sidebar {
+  padding: 1.25rem 1.5rem 4rem;
+}
+
+body.has-sidebar .site-header {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.has-sidebar .layout-with-sidebar {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.has-sidebar main,
+body.has-sidebar .site-footer {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Album main: full width, same padding as index */
+.album-main {
+  width: 100%;
+  padding: 0 1.5rem 4rem;
+}
+
+/* Main nav (album pages: breadcrumb + about in sidebar) */
+.nav-main {
+  margin-bottom: 1.5rem;
+}
+
+.nav-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+
+.nav-main a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.nav-main a:hover {
+  color: var(--text);
+}
+
+/* Breadcrumb (album pages) */
+.breadcrumb {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: var(--text-muted);
+}
+
+.breadcrumb span {
+  margin: 0 0.35em;
+}
+
+/* Album list (home & sidebar) */
+.album-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.album-list li {
+  margin-bottom: 0.5rem;
+}
+
+.album-list a {
+  color: var(--text);
+}
+
+.album-list a:hover {
+  text-decoration: underline;
+}
+
+/* Two-column layout: sidebar nav + content */
+.layout-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 52rem) {
+  .layout-with-sidebar {
+    grid-template-columns: 14rem 1fr;
+  }
+}
+
+.sidebar .nav-main {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .album-list {
+  font-size: 0.9rem;
+}
+
+/* Page content */
+.page-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+}
+
+.content p {
+  margin: 0 0 1rem;
+  max-width: 50rem;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Photo grid (album pages) — same square grid as index */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.photo-grid figure {
+  margin: 0;
+}
+
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  background: var(--border);
+}
+
+.photo-grid figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.album-page .photo-grid figcaption {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 640px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+}
+
+/* Photo grid: link wrapper (to image detail page) */
+.photo-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo-grid a:hover figcaption {
+  text-decoration: underline;
+}
+
+.album-page .photo-grid a:hover figcaption {
+  text-decoration: none;
+}
+
+/* Image detail page (single image view) */
+body.image-page main {
+  padding: 0 1.5rem 1.5rem;
+  width: 100%;
+  max-width: none;
+  flex: 1;
+  min-height: 0;
+}
+
+body.image-page #image-container {
+  height: calc(100vh - 5rem);
+  min-height: 20rem;
+}
+
+body.image-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.image-page .site-footer {
+  margin-top: auto;
+}
+
+/* Two-column layout: image left, caption + nav right; fixed height so prev/next stay in same place */
+.image-page-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  min-height: 0;
+}
+
+@media (min-width: 640px) {
+  .image-page-layout {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2rem;
+  }
+}
+
+.image-page-image {
+  flex: 0 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+.image-page-image figure {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-page-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 65vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  background: var(--border);
+}
+
+@media (min-width: 640px) {
+  .image-page-image img {
+    max-height: calc(100vh - 5.5rem);
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .image-page-layout--nav-stacked .image-page-image img {
+    max-height: calc(100vh - 11rem);
+  }
+}
+
+.image-page-sidebar {
+  flex: 0 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (min-width: 640px) {
+  .image-page-sidebar {
+    flex: 1 1 0;
+    min-width: 14rem;
+    text-align: right;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+  .image-page-layout--nav-stacked .image-page-image {
+    max-width: calc(100% - 14rem - 2rem);
+  }
+  .image-page-sidebar .image-sidebar-bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+}
+
+.image-page-caption {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text);
+}
+
+
+.image-wiki {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.image-wiki:hover {
+  color: var(--text);
+}
+
+/* Sidebar: back at top; title + prev/next in bottom block (base of image) so position never shifts */
+.image-page-sidebar .image-nav-back {
+  margin-right: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.image-page-sidebar .image-nav-back:hover {
+  color: var(--text);
+}
+
+.image-sidebar-bottom {
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.image-page-sidebar .image-nav.image-nav-prev-next-wrap {
+  padding-top: 0;
+  border-top: none;
+  margin-top: 0;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 640px) {
+  .image-sidebar-bottom {
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+  .image-page-sidebar .image-nav.image-nav-prev-next-wrap {
+    padding-top: 0.25rem;
+  }
+}
+
+.image-nav a {
+  color: var(--text-muted);
+}
+
+.image-nav a:hover {
+  color: var(--text);
+}
+
+.image-nav-prev-next {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.image-nav-prev-next a {
+  white-space: nowrap;
+}
+
+.image-nav-placeholder {
+  display: inline-block;
+  min-width: 4.5rem;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1.5rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  width: 100%;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+.site-footer a:hover {
+  color: var(--text);
+}
+
+.site-footer .sep {
+  margin: 0 0.5em;
+}

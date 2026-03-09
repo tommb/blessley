@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#F04B2D;}
+	.st2{fill:#1126A1;}
+	.st3{fill:#FFFFFF;stroke:#F04B2D;stroke-miterlimit:10;}
+	.st4{fill:#4EA3DF;}
+</style>
+<circle class="st0" cx="18" cy="18" r="18"/>
+<path class="st1" d="M1,12H35C32.5,5,25.8,0,18,0C10.2,0,3.5,5,1,12z"/>
+<path class="st2" d="M35,24H1c2.5,7,9.1,12,17,12C25.8,36,32.5,31,35,24z"/>
+<path class="st3" d="M10.3,12v5.6l0,1.7c0.1,4.2,3.5,7.6,7.7,7.6s7.6-3.4,7.7-7.6l0-1.7V12H10.3z"/>
+<rect x="10.7" y="12.5" class="st1" width="2.9" height="2.9"/>
+<polygon class="st4" points="19.6,11 16.4,11 16.4,7.7 18,6.7 19.6,7.7 "/>
+<polygon class="st2" points="16.4,11 13.1,11 13.1,7.7 14.7,6.7 16.4,7.7 "/>
+<polygon class="st4" points="26.2,11 22.9,11 22.9,7.7 24.6,6.7 26.2,7.7 "/>
+<polygon class="st2" points="22.9,11 19.6,11 19.6,7.7 21.3,6.7 22.9,7.7 "/>
+<polygon class="st4" points="13.1,11 9.8,11 9.8,7.7 11.4,6.7 13.1,7.7 "/>
+<rect x="13.6" y="15.4" class="st1" width="2.9" height="2.9"/>
+<rect x="16.6" y="12.5" class="st1" width="2.9" height="2.9"/>
+<rect x="22.4" y="12.5" class="st1" width="2.9" height="2.9"/>
+<rect x="19.5" y="15.4" class="st1" width="2.9" height="2.9"/>
+<rect x="10.7" y="18.3" class="st1" width="2.9" height="2.9"/>
+<rect x="13.6" y="21.2" class="st1" width="2.9" height="2.9"/>
+<rect x="16.6" y="18.3" class="st1" width="2.9" height="2.9"/>
+<rect x="22.4" y="18.3" class="st1" width="2.9" height="2.9"/>
+<polygon class="st1" points="13.6,25.6 13.5,25.6 12.1,24.1 13.6,24.1 "/>
+<rect x="16.6" y="24.1" class="st1" width="2.9" height="2.9"/>
+<polygon class="st1" points="22.5,25.6 22.4,25.6 22.4,24.1 23.9,24.1 "/>
+<rect x="19.5" y="21.2" class="st1" width="2.9" height="2.9"/>
+</svg>

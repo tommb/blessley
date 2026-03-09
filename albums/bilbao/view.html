@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Blessley • Photography — Bilbao</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="album-page image-page">
+  <header class="site-header">
+    <h1 class="site-title breadcrumb-title">
+      <a href="../../index.html">blessley</a><span class="sep">/</span>
+      <a href="../../index.html">photography</a><span class="sep">/</span>
+      <a href="../bilbao.html">2022 — bilbao</a>
+    </h1>
+    <nav class="header-nav">
+      <a href="../../about.html">about</a>
+      <a href="../../index.html">locations</a>
+    </nav>
+  </header>
+  <main class="album-main">
+    <div id="image-container"></div>
+  </main>
+  <footer class="site-footer">
+    ©<span id="year">2025</span> tom blessley
+    <span class="sep">•</span>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.ALBUM_TITLE = 'Bilbao';
+    window.IMAGES = [
+      { id: 'arched-bridge', title: 'Arched Bridge', src: '../../images/albums/bilbao/arched-bridge.jpg', align: 'left' },
+      { id: 'back-curves-car', title: 'Back Curves Car', src: '../../images/albums/bilbao/back-curves-car.jpg', align: 'right' },
+      { id: 'basquiat', title: 'Basquiat', src: '../../images/albums/bilbao/basquiat.jpg', align: 'left' },
+      { id: 'bead-with-children', title: 'Bead With Children', src: '../../images/albums/bilbao/bead-with-children.jpg', align: 'right' },
+      { id: 'bizitzen', title: 'Bizitzen', src: '../../images/albums/bilbao/bizitzen.jpg', align: 'left' },
+      { id: 'bourgeouis-students', title: 'Bourgeouis Students', src: '../../images/albums/bilbao/bourgeouis-students.jpg', align: 'right' },
+      { id: 'bricked-up', title: 'Bricked Up', src: '../../images/albums/bilbao/bricked-up.jpg', align: 'left' },
+      { id: 'bridge-beads', title: 'Bridge Beads', src: '../../images/albums/bilbao/bridge-beads.jpg', align: 'right' },
+      { id: 'cadillac-fin', title: 'Cadillac Fin', src: '../../images/albums/bilbao/cadillac-fin.jpg', align: 'left' },
+      { id: 'cadillac-rear', title: 'Cadillac Rear', src: '../../images/albums/bilbao/cadillac-rear.jpg', align: 'right' },
+      { id: 'columns', title: 'Columns', src: '../../images/albums/bilbao/columns.jpg', align: 'left' },
+      { id: 'crossing-bridge-guggenheim', title: 'Crossing Bridge Guggenheim', src: '../../images/albums/bilbao/crossing-bridge-guggenheim.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao' },
+      { id: 'curved-hoarding', title: 'Curved Hoarding', src: '../../images/albums/bilbao/curved-hoarding.jpg', align: 'left' },
+      { id: 'deflated-rabbits', title: 'Deflated Rabbits', src: '../../images/albums/bilbao/deflated-rabbits.jpg', align: 'right' },
+      { id: 'dog-walker', title: 'Dog Walker', src: '../../images/albums/bilbao/dog-walker.jpg', align: 'left' },
+      { id: 'escarpment', title: 'Escarpment', src: '../../images/albums/bilbao/escarpment.jpg', align: 'right' },
+      { id: 'evergreen', title: 'Evergreen', src: '../../images/albums/bilbao/evergreen.jpg', align: 'left' },
+      { id: 'fake-sandbags', title: 'Fake Sandbags', src: '../../images/albums/bilbao/fake-sandbags.jpg', align: 'right' },
+      { id: 'fiery-colours', title: 'Fiery Colours', src: '../../images/albums/bilbao/fiery-colours.jpg', align: 'left' },
+      { id: 'firestone', title: 'Firestone', src: '../../images/albums/bilbao/firestone.jpg', align: 'right' },
+      { id: 'fountain', title: 'Fountain', src: '../../images/albums/bilbao/fountain.jpg', align: 'left' },
+      { id: 'funicular', title: 'Funicular', src: '../../images/albums/bilbao/funicular.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Funicular_de_Artxanda' },
+      { id: 'icons', title: 'Icons', src: '../../images/albums/bilbao/icons.jpg', align: 'left' },
+      { id: 'jet-engine', title: 'Jet Engine', src: '../../images/albums/bilbao/jet-engine.jpg', align: 'right' },
+      { id: 'kino', title: 'Kino', src: '../../images/albums/bilbao/kino.jpg', align: 'left' },
+      { id: 'light-knot', title: 'Light Knot', src: '../../images/albums/bilbao/light-knot.jpg', align: 'right' },
+      { id: 'mandala', title: 'Mandala', src: '../../images/albums/bilbao/mandala.jpg', align: 'left' },
+      { id: 'marina', title: 'Marina', src: '../../images/albums/bilbao/marina.jpg', align: 'right' },
+      { id: 'memorial', title: 'Memorial', src: '../../images/albums/bilbao/memorial.jpg', align: 'left' },
+      { id: 'mercado', title: 'Mercado', src: '../../images/albums/bilbao/mercado.jpg', align: 'right' },
+      { id: 'model-toy-car', title: 'Model Toy Car', src: '../../images/albums/bilbao/model-toy-car.jpg', align: 'left' },
+      { id: 'over-the-balcony', title: 'Over The Balcony', src: '../../images/albums/bilbao/over-the-balcony.jpg', align: 'right' },
+      { id: 'pink-top', title: 'Pink Top', src: '../../images/albums/bilbao/pink-top.jpg', align: 'left' },
+      { id: 'pipi-en-la-calle', title: 'Pipi En La Calle', src: '../../images/albums/bilbao/pipi-en-la-calle.jpg', align: 'right' },
+      { id: 'posters', title: 'Posters', src: '../../images/albums/bilbao/posters.jpg', align: 'left' },
+      { id: 'puppy-koons-photo-chain', title: 'Puppy Koons Photo Chain', src: '../../images/albums/bilbao/puppy-koons-photo-chain.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Puppy_(Jeff_Koons)' },
+      { id: 'puppy-koons-police', title: 'Puppy Koons Police', src: '../../images/albums/bilbao/puppy-koons-police.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Puppy_(Jeff_Koons)' },
+      { id: 'puppy-koons-reststop', title: 'Puppy Koons Reststop', src: '../../images/albums/bilbao/puppy-koons-reststop.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Puppy_(Jeff_Koons)' },
+      { id: 'river-reflection', title: 'River Reflection', src: '../../images/albums/bilbao/river-reflection.jpg', align: 'left' },
+      { id: 'serra-edge', title: 'Serra Edge', src: '../../images/albums/bilbao/serra-edge.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Richard_Serra' },
+      { id: 'serra-hall', title: 'Serra Hall', src: '../../images/albums/bilbao/serra-hall.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Richard_Serra' },
+      { id: 'smug', title: 'Smug', src: '../../images/albums/bilbao/smug.jpg', align: 'right' },
+      { id: 'spider-seller', title: 'Spider Seller', src: '../../images/albums/bilbao/spider-seller.jpg', align: 'left' },
+      { id: 'station-space-invader', title: 'Station Space Invader', src: '../../images/albums/bilbao/station-space-invader.jpg', align: 'right' },
+      { id: 'stigmata', title: 'Stigmata', src: '../../images/albums/bilbao/stigmata.jpg', align: 'left' },
+      { id: 'stradivarius', title: 'Stradivarius', src: '../../images/albums/bilbao/stradivarius.jpg', align: 'right' },
+      { id: 'street-vendor', title: 'Street Vendor', src: '../../images/albums/bilbao/street-vendor.jpg', align: 'left' },
+      { id: 'sunny-costal-alley', title: 'Sunny Costal Alley', src: '../../images/albums/bilbao/sunny-costal-alley.jpg', align: 'right' },
+      { id: 'suspended-crossing', title: 'Suspended Crossing', src: '../../images/albums/bilbao/suspended-crossing.jpg', align: 'left' },
+      { id: 'tree', title: 'Tree', src: '../../images/albums/bilbao/tree.jpg', align: 'right' },
+      { id: 'under-the-bridge', title: 'Under The Bridge', src: '../../images/albums/bilbao/under-the-bridge.jpg', align: 'left' },
+      { id: 'vista', title: 'Vista', src: '../../images/albums/bilbao/vista.jpg', align: 'right' },
+      { id: 'wader', title: 'Wader', src: '../../images/albums/bilbao/wader.jpg', align: 'left' },
+      { id: 'woman-carrying-box', title: 'Woman Carrying Box', src: '../../images/albums/bilbao/woman-carrying-box.jpg', align: 'right' },
+      { id: 'yellow-car', title: 'Yellow Car', src: '../../images/albums/bilbao/yellow-car.jpg', align: 'left' },
+      { id: 'yellow-outfit', title: 'Yellow Outfit', src: '../../images/albums/bilbao/yellow-outfit.jpg', align: 'right' }
+    ];
+  </script>
+  <script src="../../js/image-view.js"></script>
+</body>
+</html>
