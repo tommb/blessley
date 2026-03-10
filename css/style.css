@@ -37,12 +37,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Site header — title left, about right */
+/* Site header — title left, nav right; layout differs by breakpoint */
 .site-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
   width: 100%;
 }
 
@@ -62,10 +60,8 @@ a:hover {
   text-decoration: none;
 }
 
-/* Header nav: about + locations (right-aligned) */
 .header-nav {
   display: flex;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -78,8 +74,95 @@ a:hover {
   color: var(--text);
 }
 
-/* Breadcrumb as site title (album pages) */
+/* Header: mobile */
+@media (max-width: 879px) {
+  .site-header {
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+  }
+  .header-nav {
+    align-items: flex-start;
+  }
+  .header-nav a[href="index.html"],
+  .header-nav a[href="../index.html"],
+  .header-nav a[href="../../index.html"] {
+    display: none;
+  }
+}
+
+/* Header: desktop */
+@media (min-width: 880px) {
+  .site-header {
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+  }
+  .header-nav {
+    align-items: center;
+  }
+}
+
+/* Album pages: desktop = one line (blessley / photography / year — city + nav); mobile = two lines (blessley, then breadcrumb) */
+.album-page .site-header-row--first .site-title {
+  margin: 0;
+}
+
+.album-page .site-header-row--breadcrumb {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Mobile: blessley on line 1, photography / year — city on line 2 */
+@media (max-width: 879px) {
+  .album-page .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .album-page .site-header-row--first {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .album-page .site-header-row--breadcrumb {
+    width: 100%;
+  }
+}
+
+/* Desktop: one line — blessley / photography / year — city (left), nav (right) */
+@media (min-width: 880px) {
+  .album-page .site-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .album-page .site-header-row--first {
+    display: contents;
+  }
+  .album-page .site-header-row--first .site-title {
+    order: 1;
+  }
+  .album-page .site-header-row--breadcrumb {
+    order: 2;
+    width: auto;
+  }
+  .album-page .site-header-row--breadcrumb::before {
+    content: " / ";
+    color: #ccc;
+  }
+  .album-page .site-header-row--first .header-nav {
+    order: 3;
+    margin-left: auto;
+  }
+}
+
+/* Breadcrumb as site title — same font as blessley (all pages, all resolutions) */
 .breadcrumb-title {
+  font-family: var(--font-serif);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -92,9 +175,10 @@ a:hover {
   margin: 0 0.25em;
 }
 
-/* Slash separator: grey on all pages */
-.breadcrumb-title span.sep {
-  color: var(--text-muted);
+/* Slash separator in visible page title: #ccc (all pages, all resolutions) */
+.breadcrumb-title .sep,
+.site-title .sep {
+  color: #ccc;
 }
 
 .breadcrumb-title span:not(.sep):last-child {
@@ -155,7 +239,7 @@ a:hover {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
   .album-thumb-grid {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
@@ -337,7 +421,7 @@ body.has-sidebar .site-footer {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
   .photo-grid {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
@@ -369,9 +453,9 @@ body.has-sidebar .site-footer {
   text-decoration: none;
 }
 
-/* Image detail page (single image view) */
+/* Image detail page (single image view) — side and bottom spacing match (1.5rem) */
 body.image-page main {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 0;
   width: 100%;
   max-width: none;
   flex: 1;
@@ -379,8 +463,9 @@ body.image-page main {
 }
 
 body.image-page #image-container {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 6.5rem);
   min-height: 20rem;
+  margin-bottom: 1.5rem;
 }
 
 body.image-page {
@@ -402,7 +487,7 @@ body.image-page .site-footer {
   min-height: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
   .image-page-layout {
     flex-direction: row;
     align-items: stretch;
@@ -434,14 +519,21 @@ body.image-page .site-footer {
   background: var(--border);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
+  .image-page-image {
+    max-width: 72rem;
+  }
   .image-page-image img {
-    max-height: calc(100vh - 5.5rem);
+    max-height: calc(100vh - 7rem);
+    max-width: 100%;
     margin-left: 0;
     margin-right: auto;
   }
+  .image-page-layout--nav-stacked .image-page-image {
+    max-width: calc(100% - 14rem - 2rem);
+  }
   .image-page-layout--nav-stacked .image-page-image img {
-    max-height: calc(100vh - 11rem);
+    max-height: calc(100vh - 12rem);
   }
 }
 
@@ -453,16 +545,13 @@ body.image-page .site-footer {
   gap: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
   .image-page-sidebar {
     flex: 1 1 0;
     min-width: 14rem;
     text-align: right;
     align-self: stretch;
     justify-content: flex-start;
-  }
-  .image-page-layout--nav-stacked .image-page-image {
-    max-width: calc(100% - 14rem - 2rem);
   }
   .image-page-sidebar .image-sidebar-bottom {
     margin-top: auto;
@@ -494,6 +583,8 @@ body.image-page .site-footer {
 /* Sidebar: back at top; title + prev/next in bottom block (base of image) so position never shifts */
 .image-page-sidebar .image-nav-back {
   margin-right: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: 0.95rem;
   color: var(--text-muted);
 }
@@ -503,24 +594,30 @@ body.image-page .site-footer {
 }
 
 .image-sidebar-bottom {
-  padding-top: 0.75rem;
-  margin-top: 0.75rem;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .image-page-sidebar .image-nav.image-nav-prev-next-wrap {
-  padding-top: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 1.25rem;
   border-top: none;
   margin-top: 0;
   font-size: 0.95rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 880px) {
   .image-sidebar-bottom {
     margin-top: auto;
-    padding-top: 0.75rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
   }
   .image-page-sidebar .image-nav.image-nav-prev-next-wrap {
-    padding-top: 0.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -545,6 +642,89 @@ body.image-page .site-footer {
 .image-nav-placeholder {
   display: inline-block;
   min-width: 4.5rem;
+}
+
+/* Image page: mobile layout — back above image, prev/next fixed, max image width, 8px spacing */
+@media (max-width: 879px) {
+  body.image-page #image-container {
+    height: auto;
+    min-height: 0;
+  }
+
+  /* 8px gap above fixed bar; padding = bar height + 8px so image can scroll clear */
+  body.image-page main {
+    padding-bottom: 3rem;
+  }
+
+  .image-page-layout {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  /* Sidebar becomes flow so we can reorder: back, then image */
+  .image-page-sidebar {
+    display: contents;
+  }
+
+  .image-nav-back {
+    order: -1;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .image-page-image {
+    order: 0;
+  }
+
+  .image-sidebar-bottom {
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  /* Hide image title on mobile */
+  .image-page-caption {
+    display: none;
+  }
+
+  /* Image: full width; max-height 70vh so landscape fits width, portrait fits height; user sees max image */
+  .image-page-image img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Prev/next: fixed at bottom; extra bottom padding so links aren’t flush with viewport edge */
+  .image-page-layout .image-nav.image-nav-prev-next-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem calc(1rem + env(safe-area-inset-bottom, 0px));
+    background: var(--bg);
+    border: none;
+    margin: 0;
+  }
+
+  .image-nav-prev-next {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .image-nav-prev-next a:first-child {
+    margin-right: auto;
+  }
+
+  .image-nav-prev-next a:last-child {
+    margin-left: auto;
+  }
 }
 
 /* Footer */
