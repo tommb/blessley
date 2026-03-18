@@ -56,6 +56,13 @@ def view_html(city, folder, year, ids):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — {cap}</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBD046KHTX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-TBD046KHTX');
+  </script>
 </head>
 <body class="album-page image-page">
   <header class="site-header">

@@ -5,22 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Oslo</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBD046KHTX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TBD046KHTX');
+  </script>
 </head>
 <body class="album-page image-page">
   <header class="site-header">
-    <div class="site-header-row site-header-row--first">
-      <h1 class="site-title"><a href="../../index.html">blessley</a></h1>
-      <nav class="header-nav">
-        <a href="../../about.html">about</a>
-        <a href="../../index.html">locations</a>
-      </nav>
-    </div>
-    <div class="site-header-row site-header-row--breadcrumb breadcrumb-title">
-      <a href="../../index.html">photography</a><span class="sep">/</span><a href="../oslo.html">2014 — oslo</a>
-    </div>
+    <h1 class="site-title breadcrumb-title">
+      <a href="../../index.html">blessley</a><span>/</span>
+      <a href="../../index.html">photography</a><span>/</span>
+      <a href="../oslo.html">2014 — oslo</a><span>/</span>
+      <span id="current-title">—</span>
+    </h1>
+    <nav class="header-nav">
+      <a href="../../about.html">about</a>
+      <a href="../../index.html">locations</a>
+    </nav>
   </header>
   <main class="album-main">
     <div id="image-container"></div>
+    <nav class="image-nav" id="image-nav" aria-label="Image navigation">
+      <a href="../oslo.html" class="image-nav-back">← back to album</a>
+      <span id="image-nav-prev"></span>
+      <span id="image-nav-next"></span>
+    </nav>
   </main>
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
