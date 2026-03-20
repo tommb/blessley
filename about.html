@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — About</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="About Thomas Blessley, a London-based product designer and photographer.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -17,7 +18,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBD046KHTX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TBD046KHTX');
   </script>
@@ -25,23 +26,23 @@
 <body>
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="index.html">blessley</a><span class="sep">/</span>
-      <a href="index.html">photography</a>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a>
     </h1>
-    <nav class="header-nav">
-      <a href="about.html">about</a>
-      <a href="index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html" aria-current="page">about</a>
+      <a href="/">locations</a>
     </nav>
   </header>
 
-  <main class="index-main">
+  <main id="main-content" class="index-main">
     <h2 class="page-title">hello</h2>
     <div class="content">
-      <p>I'm Tom Blessley, a product designer based in London, currently working at <a href="https://www.bark.com/" target="_blank" rel="noopener">Bark</a> building a marketplace for services. Please check out some of my <a href="https://www.tommb.com/" target="_blank" rel="noopener">design work over here</a>.</p>
+      <p>I'm Tom Blessley, a product designer based in London, currently working at <a href="https://www.bark.com/" target="_blank" rel="noopener noreferrer">Bark</a> building a marketplace for services. Please check out some of my <a href="https://www.tommb.com/" target="_blank" rel="noopener noreferrer">design work over here</a>.</p>
       <p>I'm so lucky to have travelled and explored so many cities across Europe over the past 20 years, and it's something I hope to continue in a post pandemic world. These photos are naive, captured over a few days spent being curious, exploring a city's history, culture, and presence. I hope they stand as testament to how much I've enjoyed visiting these cities, and the people I spent time wondering in them with.</p>
       <p>If you have a project you'd like to get started, please <a href="mailto:email@tommb.com">get in touch.</a></p>
       <p>
-        <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">@tomblessley</a><br>
+        <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">@tomblessley</a><br>
         <a href="mailto:email@tommb.com">email@tommb.com</a>
       </p>
     </div>
@@ -50,7 +51,7 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

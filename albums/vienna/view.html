@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Vienna</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Vienna by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../vienna.html">2011 — vienna</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/vienna.html">2011 — vienna</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../vienna.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/vienna.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,56 +47,56 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Vienna';
     window.IMAGES = [
-      { id: 'vienna-01', title: 'Vienna — 01', src: '../../images/albums/vienna/vienna-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Vienna' },
-      { id: 'vienna-02', title: 'Vienna — 02', src: '../../images/albums/vienna/vienna-02.jpg', align: 'right' },
-      { id: 'vienna-03', title: 'Vienna — 03', src: '../../images/albums/vienna/vienna-03.jpg', align: 'left' },
-      { id: 'vienna-04', title: 'Vienna — 04', src: '../../images/albums/vienna/vienna-04.jpg', align: 'right' },
-      { id: 'vienna-05', title: 'Vienna — 05', src: '../../images/albums/vienna/vienna-05.jpg', align: 'left' },
-      { id: 'vienna-06', title: 'Vienna — 06', src: '../../images/albums/vienna/vienna-06.jpg', align: 'right' },
-      { id: 'vienna-07', title: 'Vienna — 07', src: '../../images/albums/vienna/vienna-07.jpg', align: 'left' },
-      { id: 'vienna-08', title: 'Vienna — 08', src: '../../images/albums/vienna/vienna-08.jpg', align: 'right' },
-      { id: 'vienna-09', title: 'Vienna — 09', src: '../../images/albums/vienna/vienna-09.jpg', align: 'left' },
-      { id: 'vienna-10', title: 'Vienna — 10', src: '../../images/albums/vienna/vienna-10.jpg', align: 'right' },
-      { id: 'vienna-11', title: 'Vienna — 11', src: '../../images/albums/vienna/vienna-11.jpg', align: 'left' },
-      { id: 'vienna-12', title: 'Vienna — 12', src: '../../images/albums/vienna/vienna-12.jpg', align: 'right' },
-      { id: 'vienna-13', title: 'Vienna — 13', src: '../../images/albums/vienna/vienna-13.jpg', align: 'left' },
-      { id: 'vienna-14', title: 'Vienna — 14', src: '../../images/albums/vienna/vienna-14.jpg', align: 'right' },
-      { id: 'vienna-15', title: 'Vienna — 15', src: '../../images/albums/vienna/vienna-15.jpg', align: 'left' },
-      { id: 'vienna-16', title: 'Vienna — 16', src: '../../images/albums/vienna/vienna-16.jpg', align: 'right' },
-      { id: 'vienna-17', title: 'Vienna — 17', src: '../../images/albums/vienna/vienna-17.jpg', align: 'left' },
-      { id: 'vienna-18', title: 'Vienna — 18', src: '../../images/albums/vienna/vienna-18.jpg', align: 'right' },
-      { id: 'vienna-19', title: 'Vienna — 19', src: '../../images/albums/vienna/vienna-19.jpg', align: 'left' },
-      { id: 'vienna-20', title: 'Vienna — 20', src: '../../images/albums/vienna/vienna-20.jpg', align: 'right' },
-      { id: 'vienna-21', title: 'Vienna — 21', src: '../../images/albums/vienna/vienna-21.jpg', align: 'left' },
-      { id: 'vienna-22', title: 'Vienna — 22', src: '../../images/albums/vienna/vienna-22.jpg', align: 'right' },
-      { id: 'vienna-23', title: 'Vienna — 23', src: '../../images/albums/vienna/vienna-23.jpg', align: 'left' },
-      { id: 'vienna-24', title: 'Vienna — 24', src: '../../images/albums/vienna/vienna-24.jpg', align: 'right' },
-      { id: 'vienna-25', title: 'Vienna — 25', src: '../../images/albums/vienna/vienna-25.jpg', align: 'left' },
-      { id: 'vienna-26', title: 'Vienna — 26', src: '../../images/albums/vienna/vienna-26.jpg', align: 'right' },
-      { id: 'vienna-27', title: 'Vienna — 27', src: '../../images/albums/vienna/vienna-27.jpg', align: 'left' },
-      { id: 'vienna-28', title: 'Vienna — 28', src: '../../images/albums/vienna/vienna-28.jpg', align: 'right' },
-      { id: 'vienna-29', title: 'Vienna — 29', src: '../../images/albums/vienna/vienna-29.jpg', align: 'left' },
-      { id: 'vienna-30', title: 'Vienna — 30', src: '../../images/albums/vienna/vienna-30.jpg', align: 'right' },
-      { id: 'vienna-31', title: 'Vienna — 31', src: '../../images/albums/vienna/vienna-31.jpg', align: 'left' },
-      { id: 'vienna-32', title: 'Vienna — 32', src: '../../images/albums/vienna/vienna-32.jpg', align: 'right' },
-      { id: 'vienna-33', title: 'Vienna — 33', src: '../../images/albums/vienna/vienna-33.jpg', align: 'left' },
-      { id: 'vienna-34', title: 'Vienna — 34', src: '../../images/albums/vienna/vienna-34.jpg', align: 'right' },
-      { id: 'vienna-35', title: 'Vienna — 35', src: '../../images/albums/vienna/vienna-35.jpg', align: 'left' },
-      { id: 'vienna-36', title: 'Vienna — 36', src: '../../images/albums/vienna/vienna-36.jpg', align: 'right' },
-      { id: 'vienna-37', title: 'Vienna — 37', src: '../../images/albums/vienna/vienna-37.jpg', align: 'left' },
-      { id: 'vienna-38', title: 'Vienna — 38', src: '../../images/albums/vienna/vienna-38.jpg', align: 'right' },
-      { id: 'vienna-39', title: 'Vienna — 39', src: '../../images/albums/vienna/vienna-39.jpg', align: 'left' },
-      { id: 'vienna-40', title: 'Vienna — 40', src: '../../images/albums/vienna/vienna-40.jpg', align: 'right' },
-      { id: 'vienna-41', title: 'Vienna — 41', src: '../../images/albums/vienna/vienna-41.jpg', align: 'left' },
-      { id: 'vienna-42', title: 'Vienna — 42', src: '../../images/albums/vienna/vienna-42.jpg', align: 'right' }
+      { id: 'vienna-01', title: 'Vienna — 01', src: '/images/albums/vienna/vienna-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Vienna' },
+      { id: 'vienna-02', title: 'Vienna — 02', src: '/images/albums/vienna/vienna-02.jpg', align: 'right' },
+      { id: 'vienna-03', title: 'Vienna — 03', src: '/images/albums/vienna/vienna-03.jpg', align: 'left' },
+      { id: 'vienna-04', title: 'Vienna — 04', src: '/images/albums/vienna/vienna-04.jpg', align: 'right' },
+      { id: 'vienna-05', title: 'Vienna — 05', src: '/images/albums/vienna/vienna-05.jpg', align: 'left' },
+      { id: 'vienna-06', title: 'Vienna — 06', src: '/images/albums/vienna/vienna-06.jpg', align: 'right' },
+      { id: 'vienna-07', title: 'Vienna — 07', src: '/images/albums/vienna/vienna-07.jpg', align: 'left' },
+      { id: 'vienna-08', title: 'Vienna — 08', src: '/images/albums/vienna/vienna-08.jpg', align: 'right' },
+      { id: 'vienna-09', title: 'Vienna — 09', src: '/images/albums/vienna/vienna-09.jpg', align: 'left' },
+      { id: 'vienna-10', title: 'Vienna — 10', src: '/images/albums/vienna/vienna-10.jpg', align: 'right' },
+      { id: 'vienna-11', title: 'Vienna — 11', src: '/images/albums/vienna/vienna-11.jpg', align: 'left' },
+      { id: 'vienna-12', title: 'Vienna — 12', src: '/images/albums/vienna/vienna-12.jpg', align: 'right' },
+      { id: 'vienna-13', title: 'Vienna — 13', src: '/images/albums/vienna/vienna-13.jpg', align: 'left' },
+      { id: 'vienna-14', title: 'Vienna — 14', src: '/images/albums/vienna/vienna-14.jpg', align: 'right' },
+      { id: 'vienna-15', title: 'Vienna — 15', src: '/images/albums/vienna/vienna-15.jpg', align: 'left' },
+      { id: 'vienna-16', title: 'Vienna — 16', src: '/images/albums/vienna/vienna-16.jpg', align: 'right' },
+      { id: 'vienna-17', title: 'Vienna — 17', src: '/images/albums/vienna/vienna-17.jpg', align: 'left' },
+      { id: 'vienna-18', title: 'Vienna — 18', src: '/images/albums/vienna/vienna-18.jpg', align: 'right' },
+      { id: 'vienna-19', title: 'Vienna — 19', src: '/images/albums/vienna/vienna-19.jpg', align: 'left' },
+      { id: 'vienna-20', title: 'Vienna — 20', src: '/images/albums/vienna/vienna-20.jpg', align: 'right' },
+      { id: 'vienna-21', title: 'Vienna — 21', src: '/images/albums/vienna/vienna-21.jpg', align: 'left' },
+      { id: 'vienna-22', title: 'Vienna — 22', src: '/images/albums/vienna/vienna-22.jpg', align: 'right' },
+      { id: 'vienna-23', title: 'Vienna — 23', src: '/images/albums/vienna/vienna-23.jpg', align: 'left' },
+      { id: 'vienna-24', title: 'Vienna — 24', src: '/images/albums/vienna/vienna-24.jpg', align: 'right' },
+      { id: 'vienna-25', title: 'Vienna — 25', src: '/images/albums/vienna/vienna-25.jpg', align: 'left' },
+      { id: 'vienna-26', title: 'Vienna — 26', src: '/images/albums/vienna/vienna-26.jpg', align: 'right' },
+      { id: 'vienna-27', title: 'Vienna — 27', src: '/images/albums/vienna/vienna-27.jpg', align: 'left' },
+      { id: 'vienna-28', title: 'Vienna — 28', src: '/images/albums/vienna/vienna-28.jpg', align: 'right' },
+      { id: 'vienna-29', title: 'Vienna — 29', src: '/images/albums/vienna/vienna-29.jpg', align: 'left' },
+      { id: 'vienna-30', title: 'Vienna — 30', src: '/images/albums/vienna/vienna-30.jpg', align: 'right' },
+      { id: 'vienna-31', title: 'Vienna — 31', src: '/images/albums/vienna/vienna-31.jpg', align: 'left' },
+      { id: 'vienna-32', title: 'Vienna — 32', src: '/images/albums/vienna/vienna-32.jpg', align: 'right' },
+      { id: 'vienna-33', title: 'Vienna — 33', src: '/images/albums/vienna/vienna-33.jpg', align: 'left' },
+      { id: 'vienna-34', title: 'Vienna — 34', src: '/images/albums/vienna/vienna-34.jpg', align: 'right' },
+      { id: 'vienna-35', title: 'Vienna — 35', src: '/images/albums/vienna/vienna-35.jpg', align: 'left' },
+      { id: 'vienna-36', title: 'Vienna — 36', src: '/images/albums/vienna/vienna-36.jpg', align: 'right' },
+      { id: 'vienna-37', title: 'Vienna — 37', src: '/images/albums/vienna/vienna-37.jpg', align: 'left' },
+      { id: 'vienna-38', title: 'Vienna — 38', src: '/images/albums/vienna/vienna-38.jpg', align: 'right' },
+      { id: 'vienna-39', title: 'Vienna — 39', src: '/images/albums/vienna/vienna-39.jpg', align: 'left' },
+      { id: 'vienna-40', title: 'Vienna — 40', src: '/images/albums/vienna/vienna-40.jpg', align: 'right' },
+      { id: 'vienna-41', title: 'Vienna — 41', src: '/images/albums/vienna/vienna-41.jpg', align: 'left' },
+      { id: 'vienna-42', title: 'Vienna — 42', src: '/images/albums/vienna/vienna-42.jpg', align: 'right' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

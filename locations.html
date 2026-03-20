@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Locations</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Browse photography albums by city and year across Europe.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -17,48 +18,48 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBD046KHTX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TBD046KHTX');
   </script>
 </head>
 <body>
   <header>
-    <h1 class="site-title"><a href="index.html">blessley photography</a></h1>
-    <nav class="nav-main">
+    <h1 class="site-title"><a href="/">blessley photography</a></h1>
+    <nav class="nav-main" aria-label="Primary">
       <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="locations.html">locations</a></li>
+        <li><a href="/about.html">about</a></li>
+        <li><a href="/locations.html" aria-current="page">locations</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <h2 class="page-title">locations</h2>
     <p class="content">Cities and years I’ve photographed. Click through to the albums.</p>
     <ul class="album-list">
-      <li><a href="albums/bilbao.html">2022 — bilbao</a></li>
-      <li><a href="albums/tallinn.html">2019 — tallinn</a></li>
-      <li><a href="albums/porto.html">2018 — porto</a></li>
-      <li><a href="albums/helsinki.html">2017 — helsinki</a></li>
-      <li><a href="albums/dubrovnik.html">2016 — dubrovnik</a></li>
-      <li><a href="albums/athens.html">2015 — athens</a></li>
-      <li><a href="albums/oslo.html">2014 — oslo</a></li>
-      <li><a href="albums/reykjavic.html">2013 — reykjavic</a></li>
-      <li><a href="albums/lisbon.html">2012 — lisbon</a></li>
-      <li><a href="albums/vienna.html">2011 — vienna</a></li>
-      <li><a href="albums/budapest.html">2009 — budapest</a></li>
-      <li><a href="albums/madrid.html">2008 — madrid</a></li>
-      <li><a href="albums/berlin.html">2007 — berlin</a></li>
-      <li><a href="albums/prague.html">2006 — prague</a></li>
-      <li><a href="albums/amsterdam.html">2004 — amsterdam</a></li>
+      <li><a href="/albums/bilbao.html">2022 — bilbao</a></li>
+      <li><a href="/albums/tallinn.html">2019 — tallinn</a></li>
+      <li><a href="/albums/porto.html">2018 — porto</a></li>
+      <li><a href="/albums/helsinki.html">2017 — helsinki</a></li>
+      <li><a href="/albums/dubrovnik.html">2016 — dubrovnik</a></li>
+      <li><a href="/albums/athens.html">2015 — athens</a></li>
+      <li><a href="/albums/oslo.html">2014 — oslo</a></li>
+      <li><a href="/albums/reykjavic.html">2013 — reykjavic</a></li>
+      <li><a href="/albums/lisbon.html">2012 — lisbon</a></li>
+      <li><a href="/albums/vienna.html">2011 — vienna</a></li>
+      <li><a href="/albums/budapest.html">2009 — budapest</a></li>
+      <li><a href="/albums/madrid.html">2008 — madrid</a></li>
+      <li><a href="/albums/berlin.html">2007 — berlin</a></li>
+      <li><a href="/albums/prague.html">2006 — prague</a></li>
+      <li><a href="/albums/amsterdam.html">2004 — amsterdam</a></li>
     </ul>
   </main>
 
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Lisbon</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Lisbon by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../lisbon.html">2012 — lisbon</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/lisbon.html">2012 — lisbon</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../lisbon.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/lisbon.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,40 +47,40 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Lisbon';
     window.IMAGES = [
-      { id: 'lisbon-01', title: 'Lisbon — 01', src: '../../images/albums/lisbon/lisbon-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Lisbon' },
-      { id: 'lisbon-02', title: 'Lisbon — 02', src: '../../images/albums/lisbon/lisbon-02.jpg', align: 'right' },
-      { id: 'lisbon-03', title: 'Lisbon — 03', src: '../../images/albums/lisbon/lisbon-03.jpg', align: 'left' },
-      { id: 'lisbon-04', title: 'Lisbon — 04', src: '../../images/albums/lisbon/lisbon-04.jpg', align: 'right' },
-      { id: 'lisbon-05', title: 'Lisbon — 05', src: '../../images/albums/lisbon/lisbon-05.jpg', align: 'left' },
-      { id: 'lisbon-06', title: 'Lisbon — 06', src: '../../images/albums/lisbon/lisbon-06.jpg', align: 'right' },
-      { id: 'lisbon-07', title: 'Lisbon — 07', src: '../../images/albums/lisbon/lisbon-07.jpg', align: 'left' },
-      { id: 'lisbon-08', title: 'Lisbon — 08', src: '../../images/albums/lisbon/lisbon-08.jpg', align: 'right' },
-      { id: 'lisbon-09', title: 'Lisbon — 09', src: '../../images/albums/lisbon/lisbon-09.jpg', align: 'left' },
-      { id: 'lisbon-10', title: 'Lisbon — 10', src: '../../images/albums/lisbon/lisbon-10.jpg', align: 'right' },
-      { id: 'lisbon-11', title: 'Lisbon — 11', src: '../../images/albums/lisbon/lisbon-11.jpg', align: 'left' },
-      { id: 'lisbon-12', title: 'Lisbon — 12', src: '../../images/albums/lisbon/lisbon-12.jpg', align: 'right' },
-      { id: 'lisbon-13', title: 'Lisbon — 13', src: '../../images/albums/lisbon/lisbon-13.jpg', align: 'left' },
-      { id: 'lisbon-14', title: 'Lisbon — 14', src: '../../images/albums/lisbon/lisbon-14.jpg', align: 'right' },
-      { id: 'lisbon-15', title: 'Lisbon — 15', src: '../../images/albums/lisbon/lisbon-15.jpg', align: 'left' },
-      { id: 'lisbon-16', title: 'Lisbon — 16', src: '../../images/albums/lisbon/lisbon-16.jpg', align: 'right' },
-      { id: 'lisbon-17', title: 'Lisbon — 17', src: '../../images/albums/lisbon/lisbon-17.jpg', align: 'left' },
-      { id: 'lisbon-18', title: 'Lisbon — 18', src: '../../images/albums/lisbon/lisbon-18.jpg', align: 'right' },
-      { id: 'lisbon-19', title: 'Lisbon — 19', src: '../../images/albums/lisbon/lisbon-19.jpg', align: 'left' },
-      { id: 'lisbon-20', title: 'Lisbon — 20', src: '../../images/albums/lisbon/lisbon-20.jpg', align: 'right' },
-      { id: 'lisbon-21', title: 'Lisbon — 21', src: '../../images/albums/lisbon/lisbon-21.jpg', align: 'left' },
-      { id: 'lisbon-22', title: 'Lisbon — 22', src: '../../images/albums/lisbon/lisbon-22.jpg', align: 'right' },
-      { id: 'lisbon-23', title: 'Lisbon — 23', src: '../../images/albums/lisbon/lisbon-23.jpg', align: 'left' },
-      { id: 'lisbon-24', title: 'Lisbon — 24', src: '../../images/albums/lisbon/lisbon-24.jpg', align: 'right' },
-      { id: 'lisbon-25', title: 'Lisbon — 25', src: '../../images/albums/lisbon/lisbon-25.jpg', align: 'left' },
-      { id: 'lisbon-26', title: 'Lisbon — 26', src: '../../images/albums/lisbon/lisbon-26.jpg', align: 'right' }
+      { id: 'lisbon-01', title: 'Lisbon — 01', src: '/images/albums/lisbon/lisbon-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Lisbon' },
+      { id: 'lisbon-02', title: 'Lisbon — 02', src: '/images/albums/lisbon/lisbon-02.jpg', align: 'right' },
+      { id: 'lisbon-03', title: 'Lisbon — 03', src: '/images/albums/lisbon/lisbon-03.jpg', align: 'left' },
+      { id: 'lisbon-04', title: 'Lisbon — 04', src: '/images/albums/lisbon/lisbon-04.jpg', align: 'right' },
+      { id: 'lisbon-05', title: 'Lisbon — 05', src: '/images/albums/lisbon/lisbon-05.jpg', align: 'left' },
+      { id: 'lisbon-06', title: 'Lisbon — 06', src: '/images/albums/lisbon/lisbon-06.jpg', align: 'right' },
+      { id: 'lisbon-07', title: 'Lisbon — 07', src: '/images/albums/lisbon/lisbon-07.jpg', align: 'left' },
+      { id: 'lisbon-08', title: 'Lisbon — 08', src: '/images/albums/lisbon/lisbon-08.jpg', align: 'right' },
+      { id: 'lisbon-09', title: 'Lisbon — 09', src: '/images/albums/lisbon/lisbon-09.jpg', align: 'left' },
+      { id: 'lisbon-10', title: 'Lisbon — 10', src: '/images/albums/lisbon/lisbon-10.jpg', align: 'right' },
+      { id: 'lisbon-11', title: 'Lisbon — 11', src: '/images/albums/lisbon/lisbon-11.jpg', align: 'left' },
+      { id: 'lisbon-12', title: 'Lisbon — 12', src: '/images/albums/lisbon/lisbon-12.jpg', align: 'right' },
+      { id: 'lisbon-13', title: 'Lisbon — 13', src: '/images/albums/lisbon/lisbon-13.jpg', align: 'left' },
+      { id: 'lisbon-14', title: 'Lisbon — 14', src: '/images/albums/lisbon/lisbon-14.jpg', align: 'right' },
+      { id: 'lisbon-15', title: 'Lisbon — 15', src: '/images/albums/lisbon/lisbon-15.jpg', align: 'left' },
+      { id: 'lisbon-16', title: 'Lisbon — 16', src: '/images/albums/lisbon/lisbon-16.jpg', align: 'right' },
+      { id: 'lisbon-17', title: 'Lisbon — 17', src: '/images/albums/lisbon/lisbon-17.jpg', align: 'left' },
+      { id: 'lisbon-18', title: 'Lisbon — 18', src: '/images/albums/lisbon/lisbon-18.jpg', align: 'right' },
+      { id: 'lisbon-19', title: 'Lisbon — 19', src: '/images/albums/lisbon/lisbon-19.jpg', align: 'left' },
+      { id: 'lisbon-20', title: 'Lisbon — 20', src: '/images/albums/lisbon/lisbon-20.jpg', align: 'right' },
+      { id: 'lisbon-21', title: 'Lisbon — 21', src: '/images/albums/lisbon/lisbon-21.jpg', align: 'left' },
+      { id: 'lisbon-22', title: 'Lisbon — 22', src: '/images/albums/lisbon/lisbon-22.jpg', align: 'right' },
+      { id: 'lisbon-23', title: 'Lisbon — 23', src: '/images/albums/lisbon/lisbon-23.jpg', align: 'left' },
+      { id: 'lisbon-24', title: 'Lisbon — 24', src: '/images/albums/lisbon/lisbon-24.jpg', align: 'right' },
+      { id: 'lisbon-25', title: 'Lisbon — 25', src: '/images/albums/lisbon/lisbon-25.jpg', align: 'left' },
+      { id: 'lisbon-26', title: 'Lisbon — 26', src: '/images/albums/lisbon/lisbon-26.jpg', align: 'right' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

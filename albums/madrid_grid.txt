@@ -1,0 +1,25 @@
+    <div class="photo-grid">
+        <a href="madrid/view.html#madrid-01"><figure><img src="../images/albums/madrid/madrid-01.jpg" alt="Madrid 01"><figcaption>Madrid 01</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-02"><figure><img src="../images/albums/madrid/madrid-02.jpg" alt="Madrid 02"><figcaption>Madrid 02</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-03"><figure><img src="../images/albums/madrid/madrid-03.jpg" alt="Madrid 03"><figcaption>Madrid 03</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-04"><figure><img src="../images/albums/madrid/madrid-04.jpg" alt="Madrid 04"><figcaption>Madrid 04</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-05"><figure><img src="../images/albums/madrid/madrid-05.jpg" alt="Madrid 05"><figcaption>Madrid 05</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-06"><figure><img src="../images/albums/madrid/madrid-06.jpg" alt="Madrid 06"><figcaption>Madrid 06</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-07"><figure><img src="../images/albums/madrid/madrid-07.jpg" alt="Madrid 07"><figcaption>Madrid 07</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-08"><figure><img src="../images/albums/madrid/madrid-08.jpg" alt="Madrid 08"><figcaption>Madrid 08</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-09"><figure><img src="../images/albums/madrid/madrid-09.jpg" alt="Madrid 09"><figcaption>Madrid 09</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-10"><figure><img src="../images/albums/madrid/madrid-10.jpg" alt="Madrid 10"><figcaption>Madrid 10</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-11"><figure><img src="../images/albums/madrid/madrid-11.jpg" alt="Madrid 11"><figcaption>Madrid 11</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-12"><figure><img src="../images/albums/madrid/madrid-12.jpg" alt="Madrid 12"><figcaption>Madrid 12</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-13"><figure><img src="../images/albums/madrid/madrid-13.jpg" alt="Madrid 13"><figcaption>Madrid 13</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-14"><figure><img src="../images/albums/madrid/madrid-14.jpg" alt="Madrid 14"><figcaption>Madrid 14</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-15"><figure><img src="../images/albums/madrid/madrid-15.jpg" alt="Madrid 15"><figcaption>Madrid 15</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-16"><figure><img src="../images/albums/madrid/madrid-16.jpg" alt="Madrid 16"><figcaption>Madrid 16</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-17"><figure><img src="../images/albums/madrid/madrid-17.jpg" alt="Madrid 17"><figcaption>Madrid 17</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-18"><figure><img src="../images/albums/madrid/madrid-18.jpg" alt="Madrid 18"><figcaption>Madrid 18</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-19"><figure><img src="../images/albums/madrid/madrid-19.jpg" alt="Madrid 19"><figcaption>Madrid 19</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-20"><figure><img src="../images/albums/madrid/madrid-20.jpg" alt="Madrid 20"><figcaption>Madrid 20</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-21"><figure><img src="../images/albums/madrid/madrid-21.jpg" alt="Madrid 21"><figcaption>Madrid 21</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-22"><figure><img src="../images/albums/madrid/madrid-22.jpg" alt="Madrid 22"><figcaption>Madrid 22</figcaption></figure></a>
+        <a href="madrid/view.html#madrid-23"><figure><img src="../images/albums/madrid/madrid-23.jpg" alt="Madrid 23"><figcaption>Madrid 23</figcaption></figure></a>
+    </div>

@@ -13,7 +13,7 @@
     if (!container) return;
     var backHref = '#';
     var match = (typeof location !== 'undefined' && location.pathname) ? location.pathname.match(/\/([^/]+)\/view\.html$/i) : null;
-    if (match) backHref = '../' + match[1] + '.html';
+    if (match) backHref = '/albums/' + match[1] + '.html';
     var prevHtml = i > 0 ? '<a href="#' + images[i - 1].id + '">← previous</a>' : '<span class="image-nav-placeholder"></span>';
     var nextHtml = i < images.length - 1 ? '<a href="#' + images[i + 1].id + '">next →</a>' : '<span class="image-nav-placeholder"></span>';
     var title = img.title || img.id;

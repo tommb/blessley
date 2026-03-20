@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Amsterdam</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Amsterdam by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -17,7 +18,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBD046KHTX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){{dataLayer.push(arguments);}}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TBD046KHTX');
   </script>
@@ -25,40 +26,40 @@
 <body class="album-page image-page">
   <header class="site-header">
     <div class="site-header-row site-header-row--first">
-      <h1 class="site-title"><a href="../../index.html">blessley</a></h1>
-      <nav class="header-nav">
-        <a href="../../about.html">about</a>
-        <a href="../../index.html">locations</a>
+      <h1 class="site-title"><a href="/">blessley</a></h1>
+      <nav class="header-nav" aria-label="Primary">
+        <a href="/about.html">about</a>
+        <a href="/" aria-current="page">locations</a>
       </nav>
     </div>
     <div class="site-header-row site-header-row--breadcrumb breadcrumb-title">
-      <a href="../../index.html">photography</a><span class="sep">/</span><a href="../amsterdam.html">2004 — amsterdam</a>
+      <a href="/">photography</a><span class="sep">/</span><a href="/albums/amsterdam.html">2004 — amsterdam</a>
     </div>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
   </main>
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Amsterdam';
     window.IMAGES = [
-      { id: 'bikes', title: 'Bikes', src: '../../images/albums/amsterdam/amsterdam-01.jpg', align: 'left' },
-      { id: 'pissoir', title: 'Pissoir', src: '../../images/albums/amsterdam/amsterdam-02.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Public_urinal' },
-      { id: 'jesus', title: 'Jesus', src: '../../images/albums/amsterdam/amsterdam-03.jpg', align: 'left' },
-      { id: 'drogiste', title: 'Drogiste', src: '../../images/albums/amsterdam/amsterdam-04.jpg', align: 'right' },
-      { id: 'houseboat', title: 'Houseboat', src: '../../images/albums/amsterdam/amsterdam-05.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Houseboat' },
-      { id: 'viewpoints', title: 'Viewpoints', src: '../../images/albums/amsterdam/amsterdam-06.jpg', align: 'right' },
-      { id: 'cardboard', title: 'Cardboard', src: '../../images/albums/amsterdam/amsterdam-07.jpg', align: 'left' },
-      { id: 'red-light', title: 'Red-light', src: '../../images/albums/amsterdam/amsterdam-08.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/De_Wallen' },
-      { id: 'i-will-not-draw', title: '#I Will Not Draw As I am Told', src: '../../images/albums/amsterdam/amsterdam-09.jpg', align: 'left' },
-      { id: 'tape-writing', title: 'Tape Writing', src: '../../images/albums/amsterdam/amsterdam-10.jpg', align: 'right' }
+      { id: 'bikes', title: 'Bikes', src: '/images/albums/amsterdam/amsterdam-01.jpg', align: 'left' },
+      { id: 'pissoir', title: 'Pissoir', src: '/images/albums/amsterdam/amsterdam-02.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/Public_urinal' },
+      { id: 'jesus', title: 'Jesus', src: '/images/albums/amsterdam/amsterdam-03.jpg', align: 'left' },
+      { id: 'drogiste', title: 'Drogiste', src: '/images/albums/amsterdam/amsterdam-04.jpg', align: 'right' },
+      { id: 'houseboat', title: 'Houseboat', src: '/images/albums/amsterdam/amsterdam-05.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Houseboat' },
+      { id: 'viewpoints', title: 'Viewpoints', src: '/images/albums/amsterdam/amsterdam-06.jpg', align: 'right' },
+      { id: 'cardboard', title: 'Cardboard', src: '/images/albums/amsterdam/amsterdam-07.jpg', align: 'left' },
+      { id: 'red-light', title: 'Red-light', src: '/images/albums/amsterdam/amsterdam-08.jpg', align: 'right', wiki: 'https://en.wikipedia.org/wiki/De_Wallen' },
+      { id: 'i-will-not-draw', title: '#I Will Not Draw As I am Told', src: '/images/albums/amsterdam/amsterdam-09.jpg', align: 'left' },
+      { id: 'tape-writing', title: 'Tape Writing', src: '/images/albums/amsterdam/amsterdam-10.jpg', align: 'right' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

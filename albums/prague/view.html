@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Prague</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Prague by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../prague.html">2006 — prague</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/prague.html">2006 — prague</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../prague.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/prague.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,47 +47,47 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Prague';
     window.IMAGES = [
-      { id: 'prague-01', title: 'Prague — 01', src: '../../images/albums/prague/prague-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Prague' },
-      { id: 'prague-02', title: 'Prague — 02', src: '../../images/albums/prague/prague-02.jpg', align: 'right' },
-      { id: 'prague-03', title: 'Prague — 03', src: '../../images/albums/prague/prague-03.jpg', align: 'left' },
-      { id: 'prague-04', title: 'Prague — 04', src: '../../images/albums/prague/prague-04.jpg', align: 'right' },
-      { id: 'prague-05', title: 'Prague — 05', src: '../../images/albums/prague/prague-05.jpg', align: 'left' },
-      { id: 'prague-06', title: 'Prague — 06', src: '../../images/albums/prague/prague-06.jpg', align: 'right' },
-      { id: 'prague-07', title: 'Prague — 07', src: '../../images/albums/prague/prague-07.jpg', align: 'left' },
-      { id: 'prague-08', title: 'Prague — 08', src: '../../images/albums/prague/prague-08.jpg', align: 'right' },
-      { id: 'prague-09', title: 'Prague — 09', src: '../../images/albums/prague/prague-09.jpg', align: 'left' },
-      { id: 'prague-10', title: 'Prague — 10', src: '../../images/albums/prague/prague-10.jpg', align: 'right' },
-      { id: 'prague-11', title: 'Prague — 11', src: '../../images/albums/prague/prague-11.jpg', align: 'left' },
-      { id: 'prague-12', title: 'Prague — 12', src: '../../images/albums/prague/prague-12.jpg', align: 'right' },
-      { id: 'prague-13', title: 'Prague — 13', src: '../../images/albums/prague/prague-13.jpg', align: 'left' },
-      { id: 'prague-14', title: 'Prague — 14', src: '../../images/albums/prague/prague-14.jpg', align: 'right' },
-      { id: 'prague-15', title: 'Prague — 15', src: '../../images/albums/prague/prague-15.jpg', align: 'left' },
-      { id: 'prague-16', title: 'Prague — 16', src: '../../images/albums/prague/prague-16.jpg', align: 'right' },
-      { id: 'prague-17', title: 'Prague — 17', src: '../../images/albums/prague/prague-17.jpg', align: 'left' },
-      { id: 'prague-18', title: 'Prague — 18', src: '../../images/albums/prague/prague-18.jpg', align: 'right' },
-      { id: 'prague-19', title: 'Prague — 19', src: '../../images/albums/prague/prague-19.jpg', align: 'left' },
-      { id: 'prague-20', title: 'Prague — 20', src: '../../images/albums/prague/prague-20.jpg', align: 'right' },
-      { id: 'prague-21', title: 'Prague — 21', src: '../../images/albums/prague/prague-21.jpg', align: 'left' },
-      { id: 'prague-22', title: 'Prague — 22', src: '../../images/albums/prague/prague-22.jpg', align: 'right' },
-      { id: 'prague-23', title: 'Prague — 23', src: '../../images/albums/prague/prague-23.jpg', align: 'left' },
-      { id: 'prague-24', title: 'Prague — 24', src: '../../images/albums/prague/prague-24.jpg', align: 'right' },
-      { id: 'prague-25', title: 'Prague — 25', src: '../../images/albums/prague/prague-25.jpg', align: 'left' },
-      { id: 'prague-26', title: 'Prague — 26', src: '../../images/albums/prague/prague-26.jpg', align: 'right' },
-      { id: 'prague-27', title: 'Prague — 27', src: '../../images/albums/prague/prague-27.jpg', align: 'left' },
-      { id: 'prague-28', title: 'Prague — 28', src: '../../images/albums/prague/prague-28.jpg', align: 'right' },
-      { id: 'prague-29', title: 'Prague — 29', src: '../../images/albums/prague/prague-29.jpg', align: 'left' },
-      { id: 'prague-30', title: 'Prague — 30', src: '../../images/albums/prague/prague-30.jpg', align: 'right' },
-      { id: 'prague-31', title: 'Prague — 31', src: '../../images/albums/prague/prague-31.jpg', align: 'left' },
-      { id: 'prague-32', title: 'Prague — 32', src: '../../images/albums/prague/prague-32.jpg', align: 'right' },
-      { id: 'prague-33', title: 'Prague — 33', src: '../../images/albums/prague/prague-33.jpg', align: 'left' }
+      { id: 'prague-01', title: 'Prague — 01', src: '/images/albums/prague/prague-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Prague' },
+      { id: 'prague-02', title: 'Prague — 02', src: '/images/albums/prague/prague-02.jpg', align: 'right' },
+      { id: 'prague-03', title: 'Prague — 03', src: '/images/albums/prague/prague-03.jpg', align: 'left' },
+      { id: 'prague-04', title: 'Prague — 04', src: '/images/albums/prague/prague-04.jpg', align: 'right' },
+      { id: 'prague-05', title: 'Prague — 05', src: '/images/albums/prague/prague-05.jpg', align: 'left' },
+      { id: 'prague-06', title: 'Prague — 06', src: '/images/albums/prague/prague-06.jpg', align: 'right' },
+      { id: 'prague-07', title: 'Prague — 07', src: '/images/albums/prague/prague-07.jpg', align: 'left' },
+      { id: 'prague-08', title: 'Prague — 08', src: '/images/albums/prague/prague-08.jpg', align: 'right' },
+      { id: 'prague-09', title: 'Prague — 09', src: '/images/albums/prague/prague-09.jpg', align: 'left' },
+      { id: 'prague-10', title: 'Prague — 10', src: '/images/albums/prague/prague-10.jpg', align: 'right' },
+      { id: 'prague-11', title: 'Prague — 11', src: '/images/albums/prague/prague-11.jpg', align: 'left' },
+      { id: 'prague-12', title: 'Prague — 12', src: '/images/albums/prague/prague-12.jpg', align: 'right' },
+      { id: 'prague-13', title: 'Prague — 13', src: '/images/albums/prague/prague-13.jpg', align: 'left' },
+      { id: 'prague-14', title: 'Prague — 14', src: '/images/albums/prague/prague-14.jpg', align: 'right' },
+      { id: 'prague-15', title: 'Prague — 15', src: '/images/albums/prague/prague-15.jpg', align: 'left' },
+      { id: 'prague-16', title: 'Prague — 16', src: '/images/albums/prague/prague-16.jpg', align: 'right' },
+      { id: 'prague-17', title: 'Prague — 17', src: '/images/albums/prague/prague-17.jpg', align: 'left' },
+      { id: 'prague-18', title: 'Prague — 18', src: '/images/albums/prague/prague-18.jpg', align: 'right' },
+      { id: 'prague-19', title: 'Prague — 19', src: '/images/albums/prague/prague-19.jpg', align: 'left' },
+      { id: 'prague-20', title: 'Prague — 20', src: '/images/albums/prague/prague-20.jpg', align: 'right' },
+      { id: 'prague-21', title: 'Prague — 21', src: '/images/albums/prague/prague-21.jpg', align: 'left' },
+      { id: 'prague-22', title: 'Prague — 22', src: '/images/albums/prague/prague-22.jpg', align: 'right' },
+      { id: 'prague-23', title: 'Prague — 23', src: '/images/albums/prague/prague-23.jpg', align: 'left' },
+      { id: 'prague-24', title: 'Prague — 24', src: '/images/albums/prague/prague-24.jpg', align: 'right' },
+      { id: 'prague-25', title: 'Prague — 25', src: '/images/albums/prague/prague-25.jpg', align: 'left' },
+      { id: 'prague-26', title: 'Prague — 26', src: '/images/albums/prague/prague-26.jpg', align: 'right' },
+      { id: 'prague-27', title: 'Prague — 27', src: '/images/albums/prague/prague-27.jpg', align: 'left' },
+      { id: 'prague-28', title: 'Prague — 28', src: '/images/albums/prague/prague-28.jpg', align: 'right' },
+      { id: 'prague-29', title: 'Prague — 29', src: '/images/albums/prague/prague-29.jpg', align: 'left' },
+      { id: 'prague-30', title: 'Prague — 30', src: '/images/albums/prague/prague-30.jpg', align: 'right' },
+      { id: 'prague-31', title: 'Prague — 31', src: '/images/albums/prague/prague-31.jpg', align: 'left' },
+      { id: 'prague-32', title: 'Prague — 32', src: '/images/albums/prague/prague-32.jpg', align: 'right' },
+      { id: 'prague-33', title: 'Prague — 33', src: '/images/albums/prague/prague-33.jpg', align: 'left' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Oslo</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Oslo by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../oslo.html">2014 — oslo</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/oslo.html">2014 — oslo</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../oslo.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/oslo.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,37 +47,37 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Oslo';
     window.IMAGES = [
-      { id: 'oslo-01', title: 'Oslo — 01', src: '../../images/albums/oslo/oslo-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Oslo' },
-      { id: 'oslo-02', title: 'Oslo — 02', src: '../../images/albums/oslo/oslo-02.jpg', align: 'right' },
-      { id: 'oslo-03', title: 'Oslo — 03', src: '../../images/albums/oslo/oslo-03.jpg', align: 'left' },
-      { id: 'oslo-04', title: 'Oslo — 04', src: '../../images/albums/oslo/oslo-04.jpg', align: 'right' },
-      { id: 'oslo-05', title: 'Oslo — 05', src: '../../images/albums/oslo/oslo-05.jpg', align: 'left' },
-      { id: 'oslo-06', title: 'Oslo — 06', src: '../../images/albums/oslo/oslo-06.jpg', align: 'right' },
-      { id: 'oslo-07', title: 'Oslo — 07', src: '../../images/albums/oslo/oslo-07.jpg', align: 'left' },
-      { id: 'oslo-08', title: 'Oslo — 08', src: '../../images/albums/oslo/oslo-08.jpg', align: 'right' },
-      { id: 'oslo-09', title: 'Oslo — 09', src: '../../images/albums/oslo/oslo-09.jpg', align: 'left' },
-      { id: 'oslo-10', title: 'Oslo — 10', src: '../../images/albums/oslo/oslo-10.jpg', align: 'right' },
-      { id: 'oslo-11', title: 'Oslo — 11', src: '../../images/albums/oslo/oslo-11.jpg', align: 'left' },
-      { id: 'oslo-12', title: 'Oslo — 12', src: '../../images/albums/oslo/oslo-12.jpg', align: 'right' },
-      { id: 'oslo-13', title: 'Oslo — 13', src: '../../images/albums/oslo/oslo-13.jpg', align: 'left' },
-      { id: 'oslo-14', title: 'Oslo — 14', src: '../../images/albums/oslo/oslo-14.jpg', align: 'right' },
-      { id: 'oslo-15', title: 'Oslo — 15', src: '../../images/albums/oslo/oslo-15.jpg', align: 'left' },
-      { id: 'oslo-16', title: 'Oslo — 16', src: '../../images/albums/oslo/oslo-16.jpg', align: 'right' },
-      { id: 'oslo-17', title: 'Oslo — 17', src: '../../images/albums/oslo/oslo-17.jpg', align: 'left' },
-      { id: 'oslo-18', title: 'Oslo — 18', src: '../../images/albums/oslo/oslo-18.jpg', align: 'right' },
-      { id: 'oslo-19', title: 'Oslo — 19', src: '../../images/albums/oslo/oslo-19.jpg', align: 'left' },
-      { id: 'oslo-20', title: 'Oslo — 20', src: '../../images/albums/oslo/oslo-20.jpg', align: 'right' },
-      { id: 'oslo-21', title: 'Oslo — 21', src: '../../images/albums/oslo/oslo-21.jpg', align: 'left' },
-      { id: 'oslo-22', title: 'Oslo — 22', src: '../../images/albums/oslo/oslo-22.jpg', align: 'right' },
-      { id: 'oslo-23', title: 'Oslo — 23', src: '../../images/albums/oslo/oslo-23.jpg', align: 'left' }
+      { id: 'oslo-01', title: 'Oslo — 01', src: '/images/albums/oslo/oslo-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Oslo' },
+      { id: 'oslo-02', title: 'Oslo — 02', src: '/images/albums/oslo/oslo-02.jpg', align: 'right' },
+      { id: 'oslo-03', title: 'Oslo — 03', src: '/images/albums/oslo/oslo-03.jpg', align: 'left' },
+      { id: 'oslo-04', title: 'Oslo — 04', src: '/images/albums/oslo/oslo-04.jpg', align: 'right' },
+      { id: 'oslo-05', title: 'Oslo — 05', src: '/images/albums/oslo/oslo-05.jpg', align: 'left' },
+      { id: 'oslo-06', title: 'Oslo — 06', src: '/images/albums/oslo/oslo-06.jpg', align: 'right' },
+      { id: 'oslo-07', title: 'Oslo — 07', src: '/images/albums/oslo/oslo-07.jpg', align: 'left' },
+      { id: 'oslo-08', title: 'Oslo — 08', src: '/images/albums/oslo/oslo-08.jpg', align: 'right' },
+      { id: 'oslo-09', title: 'Oslo — 09', src: '/images/albums/oslo/oslo-09.jpg', align: 'left' },
+      { id: 'oslo-10', title: 'Oslo — 10', src: '/images/albums/oslo/oslo-10.jpg', align: 'right' },
+      { id: 'oslo-11', title: 'Oslo — 11', src: '/images/albums/oslo/oslo-11.jpg', align: 'left' },
+      { id: 'oslo-12', title: 'Oslo — 12', src: '/images/albums/oslo/oslo-12.jpg', align: 'right' },
+      { id: 'oslo-13', title: 'Oslo — 13', src: '/images/albums/oslo/oslo-13.jpg', align: 'left' },
+      { id: 'oslo-14', title: 'Oslo — 14', src: '/images/albums/oslo/oslo-14.jpg', align: 'right' },
+      { id: 'oslo-15', title: 'Oslo — 15', src: '/images/albums/oslo/oslo-15.jpg', align: 'left' },
+      { id: 'oslo-16', title: 'Oslo — 16', src: '/images/albums/oslo/oslo-16.jpg', align: 'right' },
+      { id: 'oslo-17', title: 'Oslo — 17', src: '/images/albums/oslo/oslo-17.jpg', align: 'left' },
+      { id: 'oslo-18', title: 'Oslo — 18', src: '/images/albums/oslo/oslo-18.jpg', align: 'right' },
+      { id: 'oslo-19', title: 'Oslo — 19', src: '/images/albums/oslo/oslo-19.jpg', align: 'left' },
+      { id: 'oslo-20', title: 'Oslo — 20', src: '/images/albums/oslo/oslo-20.jpg', align: 'right' },
+      { id: 'oslo-21', title: 'Oslo — 21', src: '/images/albums/oslo/oslo-21.jpg', align: 'left' },
+      { id: 'oslo-22', title: 'Oslo — 22', src: '/images/albums/oslo/oslo-22.jpg', align: 'right' },
+      { id: 'oslo-23', title: 'Oslo — 23', src: '/images/albums/oslo/oslo-23.jpg', align: 'left' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

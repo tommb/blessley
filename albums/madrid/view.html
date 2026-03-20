@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Madrid</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Madrid by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../madrid.html">2008 — madrid</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/madrid.html">2008 — madrid</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../madrid.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/madrid.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,37 +47,37 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Madrid';
     window.IMAGES = [
-      { id: 'madrid-01', title: 'Madrid — 01', src: '../../images/albums/madrid/madrid-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Madrid' },
-      { id: 'madrid-02', title: 'Madrid — 02', src: '../../images/albums/madrid/madrid-02.jpg', align: 'right' },
-      { id: 'madrid-03', title: 'Madrid — 03', src: '../../images/albums/madrid/madrid-03.jpg', align: 'left' },
-      { id: 'madrid-04', title: 'Madrid — 04', src: '../../images/albums/madrid/madrid-04.jpg', align: 'right' },
-      { id: 'madrid-05', title: 'Madrid — 05', src: '../../images/albums/madrid/madrid-05.jpg', align: 'left' },
-      { id: 'madrid-06', title: 'Madrid — 06', src: '../../images/albums/madrid/madrid-06.jpg', align: 'right' },
-      { id: 'madrid-07', title: 'Madrid — 07', src: '../../images/albums/madrid/madrid-07.jpg', align: 'left' },
-      { id: 'madrid-08', title: 'Madrid — 08', src: '../../images/albums/madrid/madrid-08.jpg', align: 'right' },
-      { id: 'madrid-09', title: 'Madrid — 09', src: '../../images/albums/madrid/madrid-09.jpg', align: 'left' },
-      { id: 'madrid-10', title: 'Madrid — 10', src: '../../images/albums/madrid/madrid-10.jpg', align: 'right' },
-      { id: 'madrid-11', title: 'Madrid — 11', src: '../../images/albums/madrid/madrid-11.jpg', align: 'left' },
-      { id: 'madrid-12', title: 'Madrid — 12', src: '../../images/albums/madrid/madrid-12.jpg', align: 'right' },
-      { id: 'madrid-13', title: 'Madrid — 13', src: '../../images/albums/madrid/madrid-13.jpg', align: 'left' },
-      { id: 'madrid-14', title: 'Madrid — 14', src: '../../images/albums/madrid/madrid-14.jpg', align: 'right' },
-      { id: 'madrid-15', title: 'Madrid — 15', src: '../../images/albums/madrid/madrid-15.jpg', align: 'left' },
-      { id: 'madrid-16', title: 'Madrid — 16', src: '../../images/albums/madrid/madrid-16.jpg', align: 'right' },
-      { id: 'madrid-17', title: 'Madrid — 17', src: '../../images/albums/madrid/madrid-17.jpg', align: 'left' },
-      { id: 'madrid-18', title: 'Madrid — 18', src: '../../images/albums/madrid/madrid-18.jpg', align: 'right' },
-      { id: 'madrid-19', title: 'Madrid — 19', src: '../../images/albums/madrid/madrid-19.jpg', align: 'left' },
-      { id: 'madrid-20', title: 'Madrid — 20', src: '../../images/albums/madrid/madrid-20.jpg', align: 'right' },
-      { id: 'madrid-21', title: 'Madrid — 21', src: '../../images/albums/madrid/madrid-21.jpg', align: 'left' },
-      { id: 'madrid-22', title: 'Madrid — 22', src: '../../images/albums/madrid/madrid-22.jpg', align: 'right' },
-      { id: 'madrid-23', title: 'Madrid — 23', src: '../../images/albums/madrid/madrid-23.jpg', align: 'left' }
+      { id: 'madrid-01', title: 'Madrid — 01', src: '/images/albums/madrid/madrid-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Madrid' },
+      { id: 'madrid-02', title: 'Madrid — 02', src: '/images/albums/madrid/madrid-02.jpg', align: 'right' },
+      { id: 'madrid-03', title: 'Madrid — 03', src: '/images/albums/madrid/madrid-03.jpg', align: 'left' },
+      { id: 'madrid-04', title: 'Madrid — 04', src: '/images/albums/madrid/madrid-04.jpg', align: 'right' },
+      { id: 'madrid-05', title: 'Madrid — 05', src: '/images/albums/madrid/madrid-05.jpg', align: 'left' },
+      { id: 'madrid-06', title: 'Madrid — 06', src: '/images/albums/madrid/madrid-06.jpg', align: 'right' },
+      { id: 'madrid-07', title: 'Madrid — 07', src: '/images/albums/madrid/madrid-07.jpg', align: 'left' },
+      { id: 'madrid-08', title: 'Madrid — 08', src: '/images/albums/madrid/madrid-08.jpg', align: 'right' },
+      { id: 'madrid-09', title: 'Madrid — 09', src: '/images/albums/madrid/madrid-09.jpg', align: 'left' },
+      { id: 'madrid-10', title: 'Madrid — 10', src: '/images/albums/madrid/madrid-10.jpg', align: 'right' },
+      { id: 'madrid-11', title: 'Madrid — 11', src: '/images/albums/madrid/madrid-11.jpg', align: 'left' },
+      { id: 'madrid-12', title: 'Madrid — 12', src: '/images/albums/madrid/madrid-12.jpg', align: 'right' },
+      { id: 'madrid-13', title: 'Madrid — 13', src: '/images/albums/madrid/madrid-13.jpg', align: 'left' },
+      { id: 'madrid-14', title: 'Madrid — 14', src: '/images/albums/madrid/madrid-14.jpg', align: 'right' },
+      { id: 'madrid-15', title: 'Madrid — 15', src: '/images/albums/madrid/madrid-15.jpg', align: 'left' },
+      { id: 'madrid-16', title: 'Madrid — 16', src: '/images/albums/madrid/madrid-16.jpg', align: 'right' },
+      { id: 'madrid-17', title: 'Madrid — 17', src: '/images/albums/madrid/madrid-17.jpg', align: 'left' },
+      { id: 'madrid-18', title: 'Madrid — 18', src: '/images/albums/madrid/madrid-18.jpg', align: 'right' },
+      { id: 'madrid-19', title: 'Madrid — 19', src: '/images/albums/madrid/madrid-19.jpg', align: 'left' },
+      { id: 'madrid-20', title: 'Madrid — 20', src: '/images/albums/madrid/madrid-20.jpg', align: 'right' },
+      { id: 'madrid-21', title: 'Madrid — 21', src: '/images/albums/madrid/madrid-21.jpg', align: 'left' },
+      { id: 'madrid-22', title: 'Madrid — 22', src: '/images/albums/madrid/madrid-22.jpg', align: 'right' },
+      { id: 'madrid-23', title: 'Madrid — 23', src: '/images/albums/madrid/madrid-23.jpg', align: 'left' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

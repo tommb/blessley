@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — Athens</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <meta name="description" content="Photography from Athens by Thomas Blessley.">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,20 +26,20 @@
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../athens.html">2015 — athens</a><span>/</span>
+      <a href="/">blessley</a><span class="sep">/</span>
+      <a href="/">photography</a><span class="sep">/</span>
+      <a href="/albums/athens.html">2015 — athens</a><span class="sep">/</span>
       <span id="current-title">—</span>
     </h1>
-    <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="/about.html">about</a>
+      <a href="/" aria-current="page">locations</a>
     </nav>
   </header>
-  <main class="album-main">
+  <main id="main-content" class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../athens.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/athens.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -46,60 +47,60 @@
   <footer class="site-footer">
     ©<span id="year">2025</span> tom blessley
     <span class="sep">•</span>
-    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener">instagram</a>
+    <a href="https://www.instagram.com/tomblessley/" target="_blank" rel="noopener noreferrer">instagram</a>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.ALBUM_TITLE = 'Athens';
     window.IMAGES = [
-      { id: 'athens-01', title: 'Athens — 01', src: '../../images/albums/athens/athens-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Athens' },
-      { id: 'athens-02', title: 'Athens — 02', src: '../../images/albums/athens/athens-02.jpg', align: 'right' },
-      { id: 'athens-03', title: 'Athens — 03', src: '../../images/albums/athens/athens-03.jpg', align: 'left' },
-      { id: 'athens-04', title: 'Athens — 04', src: '../../images/albums/athens/athens-04.jpg', align: 'right' },
-      { id: 'athens-05', title: 'Athens — 05', src: '../../images/albums/athens/athens-05.jpg', align: 'left' },
-      { id: 'athens-06', title: 'Athens — 06', src: '../../images/albums/athens/athens-06.jpg', align: 'right' },
-      { id: 'athens-07', title: 'Athens — 07', src: '../../images/albums/athens/athens-07.jpg', align: 'left' },
-      { id: 'athens-08', title: 'Athens — 08', src: '../../images/albums/athens/athens-08.jpg', align: 'right' },
-      { id: 'athens-09', title: 'Athens — 09', src: '../../images/albums/athens/athens-09.jpg', align: 'left' },
-      { id: 'athens-10', title: 'Athens — 10', src: '../../images/albums/athens/athens-10.jpg', align: 'right' },
-      { id: 'athens-11', title: 'Athens — 11', src: '../../images/albums/athens/athens-11.jpg', align: 'left' },
-      { id: 'athens-12', title: 'Athens — 12', src: '../../images/albums/athens/athens-12.jpg', align: 'right' },
-      { id: 'athens-13', title: 'Athens — 13', src: '../../images/albums/athens/athens-13.jpg', align: 'left' },
-      { id: 'athens-14', title: 'Athens — 14', src: '../../images/albums/athens/athens-14.jpg', align: 'right' },
-      { id: 'athens-15', title: 'Athens — 15', src: '../../images/albums/athens/athens-15.jpg', align: 'left' },
-      { id: 'athens-16', title: 'Athens — 16', src: '../../images/albums/athens/athens-16.jpg', align: 'right' },
-      { id: 'athens-17', title: 'Athens — 17', src: '../../images/albums/athens/athens-17.jpg', align: 'left' },
-      { id: 'athens-18', title: 'Athens — 18', src: '../../images/albums/athens/athens-18.jpg', align: 'right' },
-      { id: 'athens-19', title: 'Athens — 19', src: '../../images/albums/athens/athens-19.jpg', align: 'left' },
-      { id: 'athens-20', title: 'Athens — 20', src: '../../images/albums/athens/athens-20.jpg', align: 'right' },
-      { id: 'athens-21', title: 'Athens — 21', src: '../../images/albums/athens/athens-21.jpg', align: 'left' },
-      { id: 'athens-22', title: 'Athens — 22', src: '../../images/albums/athens/athens-22.jpg', align: 'right' },
-      { id: 'athens-23', title: 'Athens — 23', src: '../../images/albums/athens/athens-23.jpg', align: 'left' },
-      { id: 'athens-24', title: 'Athens — 24', src: '../../images/albums/athens/athens-24.jpg', align: 'right' },
-      { id: 'athens-25', title: 'Athens — 25', src: '../../images/albums/athens/athens-25.jpg', align: 'left' },
-      { id: 'athens-26', title: 'Athens — 26', src: '../../images/albums/athens/athens-26.jpg', align: 'right' },
-      { id: 'athens-27', title: 'Athens — 27', src: '../../images/albums/athens/athens-27.jpg', align: 'left' },
-      { id: 'athens-28', title: 'Athens — 28', src: '../../images/albums/athens/athens-28.jpg', align: 'right' },
-      { id: 'athens-29', title: 'Athens — 29', src: '../../images/albums/athens/athens-29.jpg', align: 'left' },
-      { id: 'athens-30', title: 'Athens — 30', src: '../../images/albums/athens/athens-30.jpg', align: 'right' },
-      { id: 'athens-31', title: 'Athens — 31', src: '../../images/albums/athens/athens-31.jpg', align: 'left' },
-      { id: 'athens-32', title: 'Athens — 32', src: '../../images/albums/athens/athens-32.jpg', align: 'right' },
-      { id: 'athens-33', title: 'Athens — 33', src: '../../images/albums/athens/athens-33.jpg', align: 'left' },
-      { id: 'athens-34', title: 'Athens — 34', src: '../../images/albums/athens/athens-34.jpg', align: 'right' },
-      { id: 'athens-35', title: 'Athens — 35', src: '../../images/albums/athens/athens-35.jpg', align: 'left' },
-      { id: 'athens-36', title: 'Athens — 36', src: '../../images/albums/athens/athens-36.jpg', align: 'right' },
-      { id: 'athens-37', title: 'Athens — 37', src: '../../images/albums/athens/athens-37.jpg', align: 'left' },
-      { id: 'athens-38', title: 'Athens — 38', src: '../../images/albums/athens/athens-38.jpg', align: 'right' },
-      { id: 'athens-39', title: 'Athens — 39', src: '../../images/albums/athens/athens-39.jpg', align: 'left' },
-      { id: 'athens-40', title: 'Athens — 40', src: '../../images/albums/athens/athens-40.jpg', align: 'right' },
-      { id: 'athens-41', title: 'Athens — 41', src: '../../images/albums/athens/athens-41.jpg', align: 'left' },
-      { id: 'athens-42', title: 'Athens — 42', src: '../../images/albums/athens/athens-42.jpg', align: 'right' },
-      { id: 'athens-43', title: 'Athens — 43', src: '../../images/albums/athens/athens-43.jpg', align: 'left' },
-      { id: 'athens-44', title: 'Athens — 44', src: '../../images/albums/athens/athens-44.jpg', align: 'right' },
-      { id: 'athens-45', title: 'Athens — 45', src: '../../images/albums/athens/athens-45.jpg', align: 'left' },
-      { id: 'athens-46', title: 'Athens — 46', src: '../../images/albums/athens/athens-46.jpg', align: 'right' }
+      { id: 'athens-01', title: 'Athens — 01', src: '/images/albums/athens/athens-01.jpg', align: 'left', wiki: 'https://en.wikipedia.org/wiki/Athens' },
+      { id: 'athens-02', title: 'Athens — 02', src: '/images/albums/athens/athens-02.jpg', align: 'right' },
+      { id: 'athens-03', title: 'Athens — 03', src: '/images/albums/athens/athens-03.jpg', align: 'left' },
+      { id: 'athens-04', title: 'Athens — 04', src: '/images/albums/athens/athens-04.jpg', align: 'right' },
+      { id: 'athens-05', title: 'Athens — 05', src: '/images/albums/athens/athens-05.jpg', align: 'left' },
+      { id: 'athens-06', title: 'Athens — 06', src: '/images/albums/athens/athens-06.jpg', align: 'right' },
+      { id: 'athens-07', title: 'Athens — 07', src: '/images/albums/athens/athens-07.jpg', align: 'left' },
+      { id: 'athens-08', title: 'Athens — 08', src: '/images/albums/athens/athens-08.jpg', align: 'right' },
+      { id: 'athens-09', title: 'Athens — 09', src: '/images/albums/athens/athens-09.jpg', align: 'left' },
+      { id: 'athens-10', title: 'Athens — 10', src: '/images/albums/athens/athens-10.jpg', align: 'right' },
+      { id: 'athens-11', title: 'Athens — 11', src: '/images/albums/athens/athens-11.jpg', align: 'left' },
+      { id: 'athens-12', title: 'Athens — 12', src: '/images/albums/athens/athens-12.jpg', align: 'right' },
+      { id: 'athens-13', title: 'Athens — 13', src: '/images/albums/athens/athens-13.jpg', align: 'left' },
+      { id: 'athens-14', title: 'Athens — 14', src: '/images/albums/athens/athens-14.jpg', align: 'right' },
+      { id: 'athens-15', title: 'Athens — 15', src: '/images/albums/athens/athens-15.jpg', align: 'left' },
+      { id: 'athens-16', title: 'Athens — 16', src: '/images/albums/athens/athens-16.jpg', align: 'right' },
+      { id: 'athens-17', title: 'Athens — 17', src: '/images/albums/athens/athens-17.jpg', align: 'left' },
+      { id: 'athens-18', title: 'Athens — 18', src: '/images/albums/athens/athens-18.jpg', align: 'right' },
+      { id: 'athens-19', title: 'Athens — 19', src: '/images/albums/athens/athens-19.jpg', align: 'left' },
+      { id: 'athens-20', title: 'Athens — 20', src: '/images/albums/athens/athens-20.jpg', align: 'right' },
+      { id: 'athens-21', title: 'Athens — 21', src: '/images/albums/athens/athens-21.jpg', align: 'left' },
+      { id: 'athens-22', title: 'Athens — 22', src: '/images/albums/athens/athens-22.jpg', align: 'right' },
+      { id: 'athens-23', title: 'Athens — 23', src: '/images/albums/athens/athens-23.jpg', align: 'left' },
+      { id: 'athens-24', title: 'Athens — 24', src: '/images/albums/athens/athens-24.jpg', align: 'right' },
+      { id: 'athens-25', title: 'Athens — 25', src: '/images/albums/athens/athens-25.jpg', align: 'left' },
+      { id: 'athens-26', title: 'Athens — 26', src: '/images/albums/athens/athens-26.jpg', align: 'right' },
+      { id: 'athens-27', title: 'Athens — 27', src: '/images/albums/athens/athens-27.jpg', align: 'left' },
+      { id: 'athens-28', title: 'Athens — 28', src: '/images/albums/athens/athens-28.jpg', align: 'right' },
+      { id: 'athens-29', title: 'Athens — 29', src: '/images/albums/athens/athens-29.jpg', align: 'left' },
+      { id: 'athens-30', title: 'Athens — 30', src: '/images/albums/athens/athens-30.jpg', align: 'right' },
+      { id: 'athens-31', title: 'Athens — 31', src: '/images/albums/athens/athens-31.jpg', align: 'left' },
+      { id: 'athens-32', title: 'Athens — 32', src: '/images/albums/athens/athens-32.jpg', align: 'right' },
+      { id: 'athens-33', title: 'Athens — 33', src: '/images/albums/athens/athens-33.jpg', align: 'left' },
+      { id: 'athens-34', title: 'Athens — 34', src: '/images/albums/athens/athens-34.jpg', align: 'right' },
+      { id: 'athens-35', title: 'Athens — 35', src: '/images/albums/athens/athens-35.jpg', align: 'left' },
+      { id: 'athens-36', title: 'Athens — 36', src: '/images/albums/athens/athens-36.jpg', align: 'right' },
+      { id: 'athens-37', title: 'Athens — 37', src: '/images/albums/athens/athens-37.jpg', align: 'left' },
+      { id: 'athens-38', title: 'Athens — 38', src: '/images/albums/athens/athens-38.jpg', align: 'right' },
+      { id: 'athens-39', title: 'Athens — 39', src: '/images/albums/athens/athens-39.jpg', align: 'left' },
+      { id: 'athens-40', title: 'Athens — 40', src: '/images/albums/athens/athens-40.jpg', align: 'right' },
+      { id: 'athens-41', title: 'Athens — 41', src: '/images/albums/athens/athens-41.jpg', align: 'left' },
+      { id: 'athens-42', title: 'Athens — 42', src: '/images/albums/athens/athens-42.jpg', align: 'right' },
+      { id: 'athens-43', title: 'Athens — 43', src: '/images/albums/athens/athens-43.jpg', align: 'left' },
+      { id: 'athens-44', title: 'Athens — 44', src: '/images/albums/athens/athens-44.jpg', align: 'right' },
+      { id: 'athens-45', title: 'Athens — 45', src: '/images/albums/athens/athens-45.jpg', align: 'left' },
+      { id: 'athens-46', title: 'Athens — 46', src: '/images/albums/athens/athens-46.jpg', align: 'right' }
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>

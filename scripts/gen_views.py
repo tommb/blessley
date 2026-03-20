@@ -43,7 +43,7 @@ def gen_images_js(city, folder, ids):
         wiki = ''
         if i == 0:
             wiki = f", wiki: 'https://en.wikipedia.org/wiki/{cap}'"
-        lines.append(f"      {{ id: '{id}', title: '{title}', src: '../../images/albums/{folder}/{id}.jpg', align: '{align}'{wiki} }}")
+        lines.append(f"      {{ id: '{id}', title: '{title}', src: '/images/albums/{folder}/{id}.jpg', align: '{align}'{wiki} }}")
     return ',\n'.join(lines)
 
 def view_html(city, folder, year, ids):
@@ -55,7 +55,7 @@ def view_html(city, folder, year, ids):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Blessley • Photography — {cap}</title>
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -76,20 +76,20 @@ def view_html(city, folder, year, ids):
 <body class="album-page image-page">
   <header class="site-header">
     <h1 class="site-title breadcrumb-title">
-      <a href="../../index.html">blessley</a><span>/</span>
-      <a href="../../index.html">photography</a><span>/</span>
-      <a href="../{city}.html">{year} — {city}</a><span>/</span>
+      <a href="/">blessley</a><span>/</span>
+      <a href="/">photography</a><span>/</span>
+      <a href="/albums/{city}.html">{year} — {city}</a><span>/</span>
       <span id="current-title">—</span>
     </h1>
     <nav class="header-nav">
-      <a href="../../about.html">about</a>
-      <a href="../../index.html">locations</a>
+      <a href="/about.html">about</a>
+      <a href="/">locations</a>
     </nav>
   </header>
   <main class="album-main">
     <div id="image-container"></div>
     <nav class="image-nav" id="image-nav" aria-label="Image navigation">
-      <a href="../{city}.html" class="image-nav-back">← back to album</a>
+      <a href="/albums/{city}.html" class="image-nav-back">← back to album</a>
       <span id="image-nav-prev"></span>
       <span id="image-nav-next"></span>
     </nav>
@@ -106,7 +106,7 @@ def view_html(city, folder, year, ids):
 {images_js}
     ];
   </script>
-  <script src="../../js/image-view.js"></script>
+  <script src="/js/image-view.js"></script>
 </body>
 </html>
 '''
@@ -115,7 +115,7 @@ def grid_line(city, folder, id, cap_display):
     """One grid item: <a><figure><img><figcaption></figure></a>"""
     num = id.split('-')[-1] if '-' in id else id
     label = f'{cap_display} {num}'
-    return f'        <a href="{city}/view.html#{id}"><figure><img src="../images/albums/{folder}/{id}.jpg" alt="{label}"><figcaption>{label}</figcaption></figure></a>'
+    return f'        <a href="/albums/{city}/view.html#{id}"><figure><img src="/images/albums/{folder}/{id}.jpg" alt="{label}"><figcaption>{label}</figcaption></figure></a>'
 
 def main():
     for city, folder, year in ALBUMS:

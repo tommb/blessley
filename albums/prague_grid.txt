@@ -1,0 +1,35 @@
+    <div class="photo-grid">
+        <a href="prague/view.html#prague-01"><figure><img src="../images/albums/prague/prague-01.jpg" alt="Prague 01"><figcaption>Prague 01</figcaption></figure></a>
+        <a href="prague/view.html#prague-02"><figure><img src="../images/albums/prague/prague-02.jpg" alt="Prague 02"><figcaption>Prague 02</figcaption></figure></a>
+        <a href="prague/view.html#prague-03"><figure><img src="../images/albums/prague/prague-03.jpg" alt="Prague 03"><figcaption>Prague 03</figcaption></figure></a>
+        <a href="prague/view.html#prague-04"><figure><img src="../images/albums/prague/prague-04.jpg" alt="Prague 04"><figcaption>Prague 04</figcaption></figure></a>
+        <a href="prague/view.html#prague-05"><figure><img src="../images/albums/prague/prague-05.jpg" alt="Prague 05"><figcaption>Prague 05</figcaption></figure></a>
+        <a href="prague/view.html#prague-06"><figure><img src="../images/albums/prague/prague-06.jpg" alt="Prague 06"><figcaption>Prague 06</figcaption></figure></a>
+        <a href="prague/view.html#prague-07"><figure><img src="../images/albums/prague/prague-07.jpg" alt="Prague 07"><figcaption>Prague 07</figcaption></figure></a>
+        <a href="prague/view.html#prague-08"><figure><img src="../images/albums/prague/prague-08.jpg" alt="Prague 08"><figcaption>Prague 08</figcaption></figure></a>
+        <a href="prague/view.html#prague-09"><figure><img src="../images/albums/prague/prague-09.jpg" alt="Prague 09"><figcaption>Prague 09</figcaption></figure></a>
+        <a href="prague/view.html#prague-10"><figure><img src="../images/albums/prague/prague-10.jpg" alt="Prague 10"><figcaption>Prague 10</figcaption></figure></a>
+        <a href="prague/view.html#prague-11"><figure><img src="../images/albums/prague/prague-11.jpg" alt="Prague 11"><figcaption>Prague 11</figcaption></figure></a>
+        <a href="prague/view.html#prague-12"><figure><img src="../images/albums/prague/prague-12.jpg" alt="Prague 12"><figcaption>Prague 12</figcaption></figure></a>
+        <a href="prague/view.html#prague-13"><figure><img src="../images/albums/prague/prague-13.jpg" alt="Prague 13"><figcaption>Prague 13</figcaption></figure></a>
+        <a href="prague/view.html#prague-14"><figure><img src="../images/albums/prague/prague-14.jpg" alt="Prague 14"><figcaption>Prague 14</figcaption></figure></a>
+        <a href="prague/view.html#prague-15"><figure><img src="../images/albums/prague/prague-15.jpg" alt="Prague 15"><figcaption>Prague 15</figcaption></figure></a>
+        <a href="prague/view.html#prague-16"><figure><img src="../images/albums/prague/prague-16.jpg" alt="Prague 16"><figcaption>Prague 16</figcaption></figure></a>
+        <a href="prague/view.html#prague-17"><figure><img src="../images/albums/prague/prague-17.jpg" alt="Prague 17"><figcaption>Prague 17</figcaption></figure></a>
+        <a href="prague/view.html#prague-18"><figure><img src="../images/albums/prague/prague-18.jpg" alt="Prague 18"><figcaption>Prague 18</figcaption></figure></a>
+        <a href="prague/view.html#prague-19"><figure><img src="../images/albums/prague/prague-19.jpg" alt="Prague 19"><figcaption>Prague 19</figcaption></figure></a>
+        <a href="prague/view.html#prague-20"><figure><img src="../images/albums/prague/prague-20.jpg" alt="Prague 20"><figcaption>Prague 20</figcaption></figure></a>
+        <a href="prague/view.html#prague-21"><figure><img src="../images/albums/prague/prague-21.jpg" alt="Prague 21"><figcaption>Prague 21</figcaption></figure></a>
+        <a href="prague/view.html#prague-22"><figure><img src="../images/albums/prague/prague-22.jpg" alt="Prague 22"><figcaption>Prague 22</figcaption></figure></a>
+        <a href="prague/view.html#prague-23"><figure><img src="../images/albums/prague/prague-23.jpg" alt="Prague 23"><figcaption>Prague 23</figcaption></figure></a>
+        <a href="prague/view.html#prague-24"><figure><img src="../images/albums/prague/prague-24.jpg" alt="Prague 24"><figcaption>Prague 24</figcaption></figure></a>
+        <a href="prague/view.html#prague-25"><figure><img src="../images/albums/prague/prague-25.jpg" alt="Prague 25"><figcaption>Prague 25</figcaption></figure></a>
+        <a href="prague/view.html#prague-26"><figure><img src="../images/albums/prague/prague-26.jpg" alt="Prague 26"><figcaption>Prague 26</figcaption></figure></a>
+        <a href="prague/view.html#prague-27"><figure><img src="../images/albums/prague/prague-27.jpg" alt="Prague 27"><figcaption>Prague 27</figcaption></figure></a>
+        <a href="prague/view.html#prague-28"><figure><img src="../images/albums/prague/prague-28.jpg" alt="Prague 28"><figcaption>Prague 28</figcaption></figure></a>
+        <a href="prague/view.html#prague-29"><figure><img src="../images/albums/prague/prague-29.jpg" alt="Prague 29"><figcaption>Prague 29</figcaption></figure></a>
+        <a href="prague/view.html#prague-30"><figure><img src="../images/albums/prague/prague-30.jpg" alt="Prague 30"><figcaption>Prague 30</figcaption></figure></a>
+        <a href="prague/view.html#prague-31"><figure><img src="../images/albums/prague/prague-31.jpg" alt="Prague 31"><figcaption>Prague 31</figcaption></figure></a>
+        <a href="prague/view.html#prague-32"><figure><img src="../images/albums/prague/prague-32.jpg" alt="Prague 32"><figcaption>Prague 32</figcaption></figure></a>
+        <a href="prague/view.html#prague-33"><figure><img src="../images/albums/prague/prague-33.jpg" alt="Prague 33"><figcaption>Prague 33</figcaption></figure></a>
+    </div>

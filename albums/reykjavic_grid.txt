@@ -1,0 +1,25 @@
+    <div class="photo-grid">
+        <a href="reykjavic/view.html#reykjavic-01"><figure><img src="../images/albums/reykjavic/reykjavic-01.jpg" alt="Reykjavic 01"><figcaption>Reykjavic 01</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-02"><figure><img src="../images/albums/reykjavic/reykjavic-02.jpg" alt="Reykjavic 02"><figcaption>Reykjavic 02</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-03"><figure><img src="../images/albums/reykjavic/reykjavic-03.jpg" alt="Reykjavic 03"><figcaption>Reykjavic 03</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-04"><figure><img src="../images/albums/reykjavic/reykjavic-04.jpg" alt="Reykjavic 04"><figcaption>Reykjavic 04</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-05"><figure><img src="../images/albums/reykjavic/reykjavic-05.jpg" alt="Reykjavic 05"><figcaption>Reykjavic 05</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-06"><figure><img src="../images/albums/reykjavic/reykjavic-06.jpg" alt="Reykjavic 06"><figcaption>Reykjavic 06</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-07"><figure><img src="../images/albums/reykjavic/reykjavic-07.jpg" alt="Reykjavic 07"><figcaption>Reykjavic 07</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-08"><figure><img src="../images/albums/reykjavic/reykjavic-08.jpg" alt="Reykjavic 08"><figcaption>Reykjavic 08</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-09"><figure><img src="../images/albums/reykjavic/reykjavic-09.jpg" alt="Reykjavic 09"><figcaption>Reykjavic 09</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-10"><figure><img src="../images/albums/reykjavic/reykjavic-10.jpg" alt="Reykjavic 10"><figcaption>Reykjavic 10</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-11"><figure><img src="../images/albums/reykjavic/reykjavic-11.jpg" alt="Reykjavic 11"><figcaption>Reykjavic 11</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-12"><figure><img src="../images/albums/reykjavic/reykjavic-12.jpg" alt="Reykjavic 12"><figcaption>Reykjavic 12</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-13"><figure><img src="../images/albums/reykjavic/reykjavic-13.jpg" alt="Reykjavic 13"><figcaption>Reykjavic 13</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-14"><figure><img src="../images/albums/reykjavic/reykjavic-14.jpg" alt="Reykjavic 14"><figcaption>Reykjavic 14</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-15"><figure><img src="../images/albums/reykjavic/reykjavic-15.jpg" alt="Reykjavic 15"><figcaption>Reykjavic 15</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-16"><figure><img src="../images/albums/reykjavic/reykjavic-16.jpg" alt="Reykjavic 16"><figcaption>Reykjavic 16</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-17"><figure><img src="../images/albums/reykjavic/reykjavic-17.jpg" alt="Reykjavic 17"><figcaption>Reykjavic 17</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-18"><figure><img src="../images/albums/reykjavic/reykjavic-18.jpg" alt="Reykjavic 18"><figcaption>Reykjavic 18</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-19"><figure><img src="../images/albums/reykjavic/reykjavic-19.jpg" alt="Reykjavic 19"><figcaption>Reykjavic 19</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-20"><figure><img src="../images/albums/reykjavic/reykjavic-20.jpg" alt="Reykjavic 20"><figcaption>Reykjavic 20</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-21"><figure><img src="../images/albums/reykjavic/reykjavic-21.jpg" alt="Reykjavic 21"><figcaption>Reykjavic 21</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-22"><figure><img src="../images/albums/reykjavic/reykjavic-22.jpg" alt="Reykjavic 22"><figcaption>Reykjavic 22</figcaption></figure></a>
+        <a href="reykjavic/view.html#reykjavic-23"><figure><img src="../images/albums/reykjavic/reykjavic-23.jpg" alt="Reykjavic 23"><figcaption>Reykjavic 23</figcaption></figure></a>
+    </div>
