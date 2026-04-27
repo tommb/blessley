@@ -9,6 +9,14 @@
 #   BLESSLEY_SFTP_USER      (default: dh_uz8ddr)
 #   BLESSLEY_SFTP_PATH      (default: /home/dh_uz8ddr/blessley.co.uk)
 #   BLESSLEY_SFTP_PASSWORD  (default: prompt interactively)
+#
+# Security notes:
+# - The password is read interactively (or from BLESSLEY_SFTP_PASSWORD) and
+#   passed to lftp via stdin (`open -u`), NOT via argv, so it doesn't appear
+#   in `ps` listings.
+# - All lftp output is piped through a redactor that replaces any occurrence
+#   of the password with "<REDACTED>" before printing, so leaked URLs in
+#   verbose/dry-run output are safe to share.
 
 set -euo pipefail
 
@@ -21,6 +29,10 @@ LOCAL="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 if ! command -v lftp >/dev/null 2>&1; then
   echo "ERROR: lftp not found. Install it with:  brew install lftp" >&2
+  exit 1
+fi
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "ERROR: python3 not found (used to redact passwords from output)." >&2
   exit 1
 fi
 
@@ -47,11 +59,11 @@ if [[ "${DRY_RUN}" -eq 1 ]]; then
   echo "[dry run] Listing changes that WOULD be uploaded. Nothing will be sent."
 fi
 
-# Files and directories we never want on production.
 EXCLUDES=(
   --exclude-glob '.git'
   --exclude-glob '.git/'
   --exclude-glob '.gitignore'
+  --exclude-glob '.gitkeep'
   --exclude-glob '.github'
   --exclude-glob '.github/'
   --exclude-glob '.claude'
@@ -70,22 +82,34 @@ EXCLUDES=(
   --exclude-glob '*_grid.txt'
   --exclude-glob '*.swp'
   --exclude-glob '*.swo'
+  --exclude-glob '*~'
 )
 
 echo "Local  : ${LOCAL}"
 echo "Remote : sftp://${USER_}@${HOST}${REMOTE}"
 echo
 
-lftp -u "${USER_},${PASSWORD}" "sftp://${HOST}" <<LFTP
+# Run lftp; pipe combined stdout+stderr through Python redactor.
+# Password goes to lftp via stdin (open -u inside the heredoc), and to
+# Python via env var DEPLOY_PASSWORD — neither appears in argv.
+{
+  lftp <<LFTP
 set sftp:auto-confirm yes
 set mirror:use-pget-n 4
 set net:max-retries 2
 set net:reconnect-interval-base 3
+open -u "${USER_},${PASSWORD}" "sftp://${HOST}"
 lcd "${LOCAL}"
 cd "${REMOTE}"
 mirror ${MIRROR_FLAGS} ${EXCLUDES[*]}
 bye
 LFTP
+} 2>&1 | DEPLOY_PASSWORD="${PASSWORD}" python3 -c '
+import os, sys
+pw = os.environ.get("DEPLOY_PASSWORD", "")
+for line in sys.stdin:
+    sys.stdout.write(line.replace(pw, "<REDACTED>") if pw else line)
+'
 
 echo
 if [[ "${DRY_RUN}" -eq 1 ]]; then
